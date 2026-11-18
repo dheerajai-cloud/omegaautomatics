@@ -1,0 +1,1734 @@
+
+<div id="omega-push-redesign">
+
+<style>
+#omega-push-redesign{
+  --or-red:#D92012;
+  --or-gold:#C5A059;
+  --or-dark:#111214;
+  --or-navy:#0B1320;
+  --or-paper:#FAF9F6;
+  --or-white:#FFFFFF;
+  --or-text:#242321;
+  --or-muted:#716E69;
+  --or-line:#E7E3DC;
+  font-family:inherit;
+  color:var(--or-text);
+  line-height:1.7;
+  overflow:hidden;
+}
+#omega-push-redesign *{box-sizing:border-box}
+#omega-push-redesign h1,
+#omega-push-redesign h2,
+#omega-push-redesign h3,
+#omega-push-redesign h4{
+  font-family:inherit;
+  line-height:1.18;
+  font-weight:600;
+  margin:0 0 16px;
+  color:inherit;
+}
+#omega-push-redesign p{
+  font-family:inherit;
+  font-size:14px;
+  line-height:1.85;
+  margin:0 0 17px;
+}
+#omega-push-redesign img{max-width:100%;height:auto}
+#omega-push-redesign a{text-decoration:none}
+#omega-push-redesign .or-wrap{
+  width:min(1160px,calc(100% - 48px));
+  margin:auto;
+}
+#omega-push-redesign .or-section{padding:88px 0}
+#omega-push-redesign .or-paper{background:var(--or-paper)}
+#omega-push-redesign .or-eyebrow{
+  display:block;
+  color:var(--or-gold);
+  font-size:11px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  margin-bottom:15px;
+}
+#omega-push-redesign .or-heading{
+  font-size:clamp(30px,3.5vw,43px);
+  letter-spacing:-.5px;
+}
+#omega-push-redesign .or-description{
+  color:var(--or-muted);
+  max-width:710px;
+}
+#omega-push-redesign .or-center{text-align:center}
+#omega-push-redesign .or-center .or-description{margin-left:auto;margin-right:auto}
+#omega-push-redesign .or-line{
+  width:42px;
+  height:2px;
+  background:var(--or-gold);
+  margin:22px 0;
+}
+#omega-push-redesign .or-btn{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  padding:13px 21px;
+  min-height:44px;
+  background:var(--or-red);
+  border:1px solid var(--or-red);
+  color:#fff!important;
+  font-family:inherit;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.35px;
+  text-transform:uppercase;
+  transition:.2s ease;
+}
+#omega-push-redesign .or-btn:hover{
+  background:#B91D12;
+  border-color:#B91D12;
+  color:#fff!important;
+}
+#omega-push-redesign .or-btn-ghost{
+  background:transparent;
+  border-color:rgba(255,255,255,.55);
+  color:#fff!important;
+}
+#omega-push-redesign .or-btn-ghost:hover{
+  background:#fff;
+  color:var(--or-dark)!important;
+}
+#omega-push-redesign .or-text-link{
+  display:inline-block;
+  color:var(--or-red);
+  font-size:12px;
+  font-weight:700;
+  border-bottom:1px solid var(--or-gold);
+  padding-bottom:3px;
+}
+#omega-push-redesign .or-small-label{
+  color:var(--or-gold);
+  font-size:10px;
+  text-transform:uppercase;
+  font-weight:700;
+  letter-spacing:1.5px;
+}
+
+/* HERO - NEW COMPOSITION */
+#omega-push-redesign .or-hero{
+  position:relative;
+  color:#fff;
+  background:
+    linear-gradient(105deg,rgba(7,8,10,.97),rgba(7,8,10,.87) 60%,rgba(7,8,10,.77)),
+    url("https://omegaautomatics.com/images/surface-mount-lh-push.png") center/cover no-repeat;
+  padding:82px 0 75px;
+}
+#omega-push-redesign .or-hero:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:3px;
+  background:var(--or-gold);
+  opacity:.8;
+}
+#omega-push-redesign .or-hero-grid{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:55px;
+  align-items:center;
+}
+#omega-push-redesign .or-hero h1{
+  color:#fff;
+  font-size:clamp(43px,5.4vw,66px);
+  font-weight:500;
+  letter-spacing:-1.2px;
+  line-height:1.02;
+  margin-bottom:22px;
+}
+#omega-push-redesign .or-hero h1 em{
+  color:var(--or-gold);
+  font-weight:500;
+}
+#omega-push-redesign .or-hero-copy{max-width:590px}
+#omega-push-redesign .or-hero-copy p{
+  color:rgba(255,255,255,.8);
+  max-width:530px;
+}
+#omega-push-redesign .or-hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:27px;
+}
+#omega-push-redesign .or-hero-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  border-top:1px solid rgba(255,255,255,.18);
+  margin-top:34px;
+  padding-top:19px;
+}
+#omega-push-redesign .or-hero-meta span{
+  color:rgba(255,255,255,.75);
+  font-size:11px;
+}
+#omega-push-redesign .or-hero-meta strong{
+  color:var(--or-gold);
+  font-size:12px;
+  display:block;
+}
+#omega-push-redesign .or-hero-showcase{
+  position:relative;
+  padding:25px 25px 25px 0;
+}
+#omega-push-redesign .or-hero-showcase:before{
+  content:"";
+  position:absolute;
+  right:0;
+  top:0;
+  width:80%;
+  height:100%;
+  border:1px solid rgba(197,160,89,.55);
+}
+#omega-push-redesign .or-hero-main-image{
+  position:relative;
+  background:#fff;
+  padding:22px;
+  z-index:1;
+  min-height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#omega-push-redesign .or-hero-main-image img{
+  width:100%;
+  height:240px;
+  object-fit:contain;
+}
+#omega-push-redesign .or-image-caption{
+  position:relative;
+  z-index:2;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  color:#fff;
+  font-size:11px;
+  padding:15px 0 0 15px;
+}
+#omega-push-redesign .or-image-caption strong{
+  color:var(--or-gold);
+}
+
+/* SECTION NAV */
+#omega-push-redesign .or-anchorbar{
+  background:#fff;
+  border-bottom:1px solid var(--or-line);
+}
+#omega-push-redesign .or-anchor-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:16px 0;
+  overflow-x:auto;
+}
+#omega-push-redesign .or-anchor-inner a{
+  white-space:nowrap;
+  color:#45413C;
+  font-size:11px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+}
+#omega-push-redesign .or-anchor-inner a:hover{color:var(--or-red)}
+
+/* INTRO EDITORIAL */
+#omega-push-redesign .or-intro-grid{
+  display:grid;
+  grid-template-columns:.75fr 1.25fr;
+  gap:65px;
+  align-items:start;
+}
+#omega-push-redesign .or-intro-aside{
+  border-top:2px solid var(--or-gold);
+  padding-top:20px;
+}
+#omega-push-redesign .or-intro-aside .or-number{
+  font-size:clamp(54px,7vw,82px);
+  line-height:1;
+  color:var(--or-gold);
+  font-weight:400;
+  display:block;
+  margin-bottom:13px;
+}
+#omega-push-redesign .or-intro-aside p{
+  font-size:12px;
+  color:var(--or-muted);
+}
+#omega-push-redesign .or-intro-content h2{max-width:650px}
+#omega-push-redesign .or-intro-content p{color:var(--or-muted)}
+#omega-push-redesign .or-intro-bottom{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-top:1px solid var(--or-line);
+  margin-top:27px;
+  padding-top:18px;
+  gap:20px;
+}
+#omega-push-redesign .or-intro-bottom strong{
+  display:block;
+  font-size:12px;
+  margin-bottom:5px;
+}
+#omega-push-redesign .or-intro-bottom span{
+  display:block;
+  font-size:11px;
+  color:var(--or-muted);
+}
+
+/* CONFIGURATION SELECTOR */
+#omega-push-redesign .or-config-section{background:#F5F3EF}
+#omega-push-redesign .or-config-heading{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:30px;
+  margin-bottom:36px;
+}
+#omega-push-redesign .or-config-heading .or-heading{max-width:570px}
+#omega-push-redesign .or-config-heading p{
+  max-width:370px;
+  color:var(--or-muted);
+  font-size:13px;
+  margin-bottom:3px;
+}
+#omega-push-redesign .or-config-list{
+  border-top:1px solid #DAD5CC;
+}
+#omega-push-redesign .or-config-row{
+  display:grid;
+  grid-template-columns:75px 1.1fr 1fr 1fr 150px;
+  gap:22px;
+  align-items:center;
+  padding:21px 15px;
+  border-bottom:1px solid #DAD5CC;
+  transition:background .2s ease;
+}
+#omega-push-redesign .or-config-row:hover{background:#fff}
+#omega-push-redesign .or-config-index{
+  color:var(--or-gold);
+  font-size:22px;
+  font-weight:400;
+}
+#omega-push-redesign .or-config-image{
+  background:#fff;
+  padding:8px;
+  height:88px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#omega-push-redesign .or-config-image img{
+  width:100%;
+  height:70px;
+  object-fit:contain;
+}
+#omega-push-redesign .or-config-name h3{
+  font-size:17px;
+  margin:0 0 5px;
+}
+#omega-push-redesign .or-config-name span{
+  color:var(--or-gold);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:1px;
+}
+#omega-push-redesign .or-config-detail{
+  color:var(--or-muted);
+  font-size:12px;
+}
+#omega-push-redesign .or-config-row .or-text-link{
+  justify-self:end;
+  white-space:nowrap;
+}
+
+/* APPLICATIONS */
+#omega-push-redesign .or-app-layout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+#omega-push-redesign .or-app-visual{
+  background:#F3F1EC;
+  padding:38px;
+  min-height:360px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+#omega-push-redesign .or-app-visual img{
+  width:100%;
+  height:230px;
+  object-fit:contain;
+  background:#fff;
+}
+#omega-push-redesign .or-app-visual-caption{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  margin-top:16px;
+  color:#5E5951;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.8px;
+}
+#omega-push-redesign .or-app-copy p{color:var(--or-muted)}
+#omega-push-redesign .or-app-points{
+  margin-top:24px;
+  border-top:1px solid var(--or-line);
+}
+#omega-push-redesign .or-app-point{
+  display:grid;
+  grid-template-columns:35px 1fr;
+  gap:14px;
+  padding:14px 0;
+  border-bottom:1px solid var(--or-line);
+}
+#omega-push-redesign .or-app-point b{
+  color:var(--or-gold);
+  font-size:13px;
+}
+#omega-push-redesign .or-app-point span{
+  color:var(--or-muted);
+  font-size:12px;
+}
+
+/* SPECS - TABLE AND CALLOUT */
+#omega-push-redesign .or-spec-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:30px;
+  margin-bottom:32px;
+}
+#omega-push-redesign .or-spec-header p{
+  color:var(--or-muted);
+  max-width:400px;
+  font-size:13px;
+  margin:0;
+}
+#omega-push-redesign .or-spec-layout{
+  display:grid;
+  grid-template-columns:1.35fr .65fr;
+  gap:45px;
+  align-items:start;
+}
+#omega-push-redesign .or-spec-table{
+  width:100%;
+  border-collapse:collapse;
+}
+#omega-push-redesign .or-spec-table th{
+  background:var(--or-dark);
+  color:#fff;
+  text-align:left;
+  padding:15px 16px;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+#omega-push-redesign .or-spec-table td{
+  padding:13px 16px;
+  font-size:12px;
+  border-bottom:1px solid var(--or-line);
+  vertical-align:top;
+}
+#omega-push-redesign .or-spec-table tr:nth-child(even){background:var(--or-paper)}
+#omega-push-redesign .or-spec-table td:first-child{
+  font-weight:700;
+  width:42%;
+}
+#omega-push-redesign .or-spec-table td:last-child{color:var(--or-muted)}
+#omega-push-redesign .or-spec-aside{
+  background:var(--or-paper);
+  padding:28px;
+  border-top:3px solid var(--or-gold);
+}
+#omega-push-redesign .or-spec-aside h3{font-size:22px}
+#omega-push-redesign .or-spec-aside p{color:var(--or-muted);font-size:13px}
+#omega-push-redesign .or-spec-highlight{
+  border-top:1px solid var(--or-line);
+  padding:15px 0;
+}
+#omega-push-redesign .or-spec-highlight strong{
+  display:block;
+  font-size:12px;
+}
+#omega-push-redesign .or-spec-highlight span{
+  font-size:12px;
+  color:var(--or-muted);
+}
+
+/* FEATURE STORY - DARK */
+#omega-push-redesign .or-feature-dark{
+  background:#111214;
+  color:#fff;
+  position:relative;
+}
+#omega-push-redesign .or-feature-dark .or-heading{color:#fff}
+#omega-push-redesign .or-feature-dark .or-description{color:rgba(255,255,255,.67)}
+#omega-push-redesign .or-feature-top{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:65px;
+  align-items:end;
+  margin-bottom:47px;
+}
+#omega-push-redesign .or-feature-top .or-line{background:var(--or-red)}
+#omega-push-redesign .or-feature-matrix{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-top:1px solid rgba(255,255,255,.2);
+  border-left:1px solid rgba(255,255,255,.2);
+}
+#omega-push-redesign .or-feature-cell{
+  min-height:155px;
+  padding:22px 19px;
+  border-right:1px solid rgba(255,255,255,.2);
+  border-bottom:1px solid rgba(255,255,255,.2);
+}
+#omega-push-redesign .or-feature-cell .or-feature-no{
+  color:var(--or-gold);
+  font-size:11px;
+  display:block;
+  margin-bottom:16px;
+}
+#omega-push-redesign .or-feature-cell h3{
+  color:#fff;
+  font-size:15px;
+  margin-bottom:8px;
+}
+#omega-push-redesign .or-feature-cell p{
+  color:rgba(255,255,255,.62);
+  font-size:11px;
+  line-height:1.65;
+  margin:0;
+}
+
+/* FINISH AND DIMENSIONS */
+#omega-push-redesign .or-finish-layout{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:65px;
+  align-items:start;
+}
+#omega-push-redesign .or-finish-intro p{color:var(--or-muted)}
+#omega-push-redesign .or-finish-options{
+  border-top:1px solid var(--or-line);
+}
+#omega-push-redesign .or-finish-option{
+  display:grid;
+  grid-template-columns:58px 1fr;
+  gap:20px;
+  padding:23px 0;
+  border-bottom:1px solid var(--or-line);
+}
+#omega-push-redesign .or-finish-swatch{
+  width:48px;
+  height:48px;
+  border:1px solid #D6D2CA;
+  background:linear-gradient(135deg,#F5F5F3,#B9B9B4);
+}
+#omega-push-redesign .or-finish-swatch.black{
+  background:linear-gradient(135deg,#3A3A3A,#101010);
+}
+#omega-push-redesign .or-finish-option h3{
+  font-size:17px;
+  margin-bottom:5px;
+}
+#omega-push-redesign .or-finish-option p{
+  color:var(--or-muted);
+  font-size:12px;
+  margin:0;
+}
+
+/* TECHNICAL DRAWINGS - EDITORIAL LIST */
+#omega-push-redesign .or-drawing-head{
+  display:grid;
+  grid-template-columns:1fr .8fr;
+  gap:50px;
+  align-items:end;
+  margin-bottom:35px;
+}
+#omega-push-redesign .or-drawing-head p{
+  color:var(--or-muted);
+  font-size:13px;
+  margin:0;
+}
+#omega-push-redesign .or-drawing-list{
+  border-top:1px solid var(--or-line);
+}
+#omega-push-redesign .or-drawing-row{
+  display:grid;
+  grid-template-columns:65px 1fr 160px 150px;
+  gap:20px;
+  align-items:center;
+  padding:18px 12px;
+  border-bottom:1px solid var(--or-line);
+}
+#omega-push-redesign .or-drawing-icon{
+  color:var(--or-gold);
+  font-size:25px;
+}
+#omega-push-redesign .or-drawing-row h3{
+  font-size:15px;
+  margin:0 0 4px;
+}
+#omega-push-redesign .or-drawing-row p{
+  font-size:11px;
+  color:var(--or-muted);
+  margin:0;
+}
+#omega-push-redesign .or-drawing-code{
+  color:var(--or-muted);
+  font-size:11px;
+}
+#omega-push-redesign .or-drawing-row .or-btn{
+  min-height:37px;
+  padding:8px 12px;
+  font-size:10px;
+}
+
+/* RELATED PRODUCTS */
+#omega-push-redesign .or-related{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:0;
+  border-top:1px solid var(--or-line);
+  border-left:1px solid var(--or-line);
+}
+#omega-push-redesign .or-related-item{
+  padding:25px;
+  min-height:190px;
+  border-right:1px solid var(--or-line);
+  border-bottom:1px solid var(--or-line);
+  background:#fff;
+  transition:background .2s ease;
+}
+#omega-push-redesign .or-related-item:hover{background:var(--or-paper)}
+#omega-push-redesign .or-related-item span{
+  display:block;
+  color:var(--or-gold);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:13px;
+}
+#omega-push-redesign .or-related-item h3{
+  font-size:17px;
+  margin-bottom:8px;
+}
+#omega-push-redesign .or-related-item p{
+  font-size:12px;
+  color:var(--or-muted);
+  margin-bottom:14px;
+}
+#omega-push-redesign .or-related-item b{
+  font-size:11px;
+  color:var(--or-red);
+}
+
+/* FAQ */
+#omega-push-redesign .or-faq-layout{
+  display:grid;
+  grid-template-columns:.7fr 1.3fr;
+  gap:70px;
+  align-items:start;
+}
+#omega-push-redesign .or-faq-intro{
+  position:sticky;
+  top:25px;
+}
+#omega-push-redesign .or-faq-intro p{color:var(--or-muted)}
+#omega-push-redesign .or-faq-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0 28px;
+}
+#omega-push-redesign .or-faq-item{
+  border-bottom:1px solid #DAD5CC;
+  padding:18px 0;
+}
+#omega-push-redesign .or-faq-item summary{
+  cursor:pointer;
+  list-style:none;
+  position:relative;
+  padding-right:27px;
+  font-size:13px;
+  font-weight:700;
+  line-height:1.55;
+}
+#omega-push-redesign .or-faq-item summary::-webkit-details-marker{display:none}
+#omega-push-redesign .or-faq-item summary:after{
+  content:"+";
+  position:absolute;
+  right:2px;
+  top:-4px;
+  color:var(--or-gold);
+  font-size:22px;
+  font-weight:400;
+}
+#omega-push-redesign .or-faq-item[open] summary:after{content:"−"}
+#omega-push-redesign .or-faq-item p{
+  margin:12px 0 0;
+  color:var(--or-muted);
+  font-size:12px;
+  line-height:1.75;
+}
+
+/* FINAL CTA */
+#omega-push-redesign .or-final-cta{
+  background:var(--or-navy);
+  color:#fff;
+  padding:70px 0;
+  position:relative;
+}
+#omega-push-redesign .or-final-cta:before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  height:3px;
+  width:100%;
+  background:var(--or-gold);
+}
+#omega-push-redesign .or-final-inner{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:40px;
+  align-items:center;
+}
+#omega-push-redesign .or-final-cta h2{
+  color:#fff;
+  font-size:clamp(28px,3.6vw,42px);
+  max-width:700px;
+}
+#omega-push-redesign .or-final-cta p{
+  color:rgba(255,255,255,.7);
+  max-width:680px;
+  margin:0;
+}
+#omega-push-redesign .or-final-actions{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  min-width:190px;
+}
+
+/* RESPONSIVE */
+@media(max-width:950px){
+  #omega-push-redesign .or-config-row{
+    grid-template-columns:50px 100px 1fr 1fr;
+  }
+  #omega-push-redesign .or-config-row .or-text-link{
+    grid-column:3/5;
+    justify-self:start;
+  }
+  #omega-push-redesign .or-feature-matrix{grid-template-columns:repeat(2,1fr)}
+  #omega-push-redesign .or-related{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  #omega-push-redesign .or-wrap{width:calc(100% - 34px)}
+  #omega-push-redesign .or-section{padding:55px 0}
+  #omega-push-redesign .or-hero{padding:53px 0 48px}
+  #omega-push-redesign .or-hero-grid,
+  #omega-push-redesign .or-intro-grid,
+  #omega-push-redesign .or-app-layout,
+  #omega-push-redesign .or-spec-layout,
+  #omega-push-redesign .or-feature-top,
+  #omega-push-redesign .or-finish-layout,
+  #omega-push-redesign .or-drawing-head,
+  #omega-push-redesign .or-faq-layout,
+  #omega-push-redesign .or-final-inner{
+    grid-template-columns:1fr;
+  }
+  #omega-push-redesign .or-hero-grid{gap:34px}
+  #omega-push-redesign .or-hero h1{font-size:46px}
+  #omega-push-redesign .or-hero-showcase{padding:16px 16px 16px 0}
+  #omega-push-redesign .or-hero-main-image{min-height:230px}
+  #omega-push-redesign .or-hero-main-image img{height:190px}
+  #omega-push-redesign .or-hero-meta{gap:12px}
+  #omega-push-redesign .or-anchor-inner{justify-content:flex-start}
+  #omega-push-redesign .or-intro-grid{gap:28px}
+  #omega-push-redesign .or-intro-aside .or-number{font-size:56px}
+  #omega-push-redesign .or-intro-bottom{gap:12px}
+  #omega-push-redesign .or-config-heading{display:block}
+  #omega-push-redesign .or-config-heading p{margin-top:15px}
+  #omega-push-redesign .or-config-row{
+    grid-template-columns:38px 85px 1fr;
+    gap:12px;
+    padding:15px 7px;
+  }
+  #omega-push-redesign .or-config-index{font-size:17px}
+  #omega-push-redesign .or-config-image{height:76px;padding:5px}
+  #omega-push-redesign .or-config-image img{height:65px}
+  #omega-push-redesign .or-config-name h3{font-size:14px}
+  #omega-push-redesign .or-config-detail{grid-column:3;font-size:11px}
+  #omega-push-redesign .or-config-row .or-text-link{
+    grid-column:3;
+    justify-self:start;
+    font-size:11px;
+  }
+  #omega-push-redesign .or-app-layout{gap:28px}
+  #omega-push-redesign .or-app-visual{padding:20px;min-height:auto}
+  #omega-push-redesign .or-app-visual img{height:180px}
+  #omega-push-redesign .or-spec-header{display:block}
+  #omega-push-redesign .or-spec-header p{margin-top:13px}
+  #omega-push-redesign .or-spec-layout{gap:25px}
+  #omega-push-redesign .or-spec-table td{padding:10px 9px;font-size:11px}
+  #omega-push-redesign .or-spec-table th{padding:12px 9px}
+  #omega-push-redesign .or-feature-top{gap:10px}
+  #omega-push-redesign .or-feature-matrix{grid-template-columns:1fr 1fr}
+  #omega-push-redesign .or-feature-cell{padding:17px 13px;min-height:145px}
+  #omega-push-redesign .or-feature-cell h3{font-size:13px}
+  #omega-push-redesign .or-feature-cell p{font-size:10px}
+  #omega-push-redesign .or-finish-layout{gap:25px}
+  #omega-push-redesign .or-drawing-head{gap:15px}
+  #omega-push-redesign .or-drawing-row{
+    grid-template-columns:35px 1fr auto;
+    gap:10px;
+    padding:15px 3px;
+  }
+  #omega-push-redesign .or-drawing-code{display:none}
+  #omega-push-redesign .or-drawing-row h3{font-size:12px}
+  #omega-push-redesign .or-drawing-row .or-btn{
+    font-size:9px;
+    padding:7px 9px;
+    min-height:34px;
+  }
+  #omega-push-redesign .or-related{grid-template-columns:1fr}
+  #omega-push-redesign .or-related-item{min-height:auto;padding:21px}
+  #omega-push-redesign .or-faq-layout{gap:25px}
+  #omega-push-redesign .or-faq-intro{position:static}
+  #omega-push-redesign .or-faq-list{grid-template-columns:1fr}
+  #omega-push-redesign .or-final-inner{gap:25px}
+  #omega-push-redesign .or-final-actions{flex-direction:row;flex-wrap:wrap}
+}
+@media(max-width:390px){
+  #omega-push-redesign .or-hero-actions{flex-direction:column}
+  #omega-push-redesign .or-hero-actions .or-btn{width:100%}
+  #omega-push-redesign .or-intro-bottom{grid-template-columns:1fr}
+  #omega-push-redesign .or-feature-matrix{grid-template-columns:1fr}
+  #omega-push-redesign .or-final-actions{flex-direction:column}
+}
+</style>
+
+<!-- 01 / HERO -->
+<section class="or-hero">
+  <div class="or-wrap">
+    <div class="or-hero-grid">
+
+      <div class="or-hero-copy">
+        <span class="or-eyebrow">OA100 Series · Automatic Swing Door Systems</span>
+
+        <h1>Surface Mount<br><em>Push Door</em><br>Operators</h1>
+
+        <div class="or-line"></div>
+
+        <p>
+          Automatic swing door operators engineered for commercial
+          entrances, healthcare facilities, condominiums and
+          institutional buildings. The Omega OA100 Surface Mount
+          Push Series offers left-hand, right-hand and dual-door
+          configurations for a range of project requirements.
+        </p>
+
+        <p>
+          Explore five model references, review technical
+          specifications and access the corresponding product
+          drawings before selecting your door operator.
+        </p>
+
+        <div class="or-hero-actions">
+          <a class="or-btn"
+             href="https://omegaautomatics.com/contact">
+            Discuss Your Project →
+          </a>
+          <a class="or-btn or-btn-ghost"
+             href="https://omegaautomatics.com/images/pdf/OA-100-Technical-Features-and-Functional-Descriptions.pdf"
+             target="_blank" rel="noopener">
+            Technical Features PDF
+          </a>
+        </div>
+
+        <div class="or-hero-meta">
+          <span><strong>05 Models</strong>Push configurations</span>
+          <span><strong>Single & Dual</strong>Door arrangements</span>
+          <span><strong>02 Finishes</strong>Clear & black anodized</span>
+        </div>
+      </div>
+
+      <div class="or-hero-showcase">
+        <div class="or-hero-main-image">
+          <img src="https://omegaautomatics.com/images/surface-mount-lh-push.png"
+               alt="Omega OA100 surface mount left hand push door operator">
+        </div>
+        <div class="or-image-caption">
+          <span>OA100 Surface Mount Series</span>
+          <strong>LEFT HAND PUSH</strong>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 02 / QUICK NAVIGATION -->
+<div class="or-anchorbar">
+  <div class="or-wrap">
+    <nav class="or-anchor-inner" aria-label="Page sections">
+      <a href="#or-overview">Overview</a>
+      <a href="#or-models">Models</a>
+      <a href="#or-applications">Applications</a>
+      <a href="#or-specifications">Specifications</a>
+      <a href="#or-features">Features</a>
+      <a href="#or-drawings">Drawings</a>
+      <a href="#or-faq">FAQs</a>
+    </nav>
+  </div>
+</div>
+
+<!-- 03 / PRODUCT INTRODUCTION -->
+<section class="or-section" id="or-overview">
+  <div class="or-wrap">
+    <div class="or-intro-grid">
+
+      <aside class="or-intro-aside">
+        <span class="or-number">OA100</span>
+        <span class="or-small-label">Surface Mount Push Series</span>
+        <div class="or-line"></div>
+        <p>
+          A configurable automatic swing door operator range
+          developed for commercial and institutional entrance
+          applications.
+        </p>
+      </aside>
+
+      <div class="or-intro-content">
+        <span class="or-eyebrow">Product Overview</span>
+        <h2 class="or-heading">
+          A Surface-Mounted Solution for Automatic Swing Door Applications
+        </h2>
+
+        <p>
+          The Omega OA100 Surface Mount Push Operator is designed
+          for installations requiring an overhead, surface-mounted
+          automatic door operator with a push-arm arrangement.
+          Available configurations include single-door left-hand
+          and right-hand models, along with dual-door arrangements.
+        </p>
+
+        <p>
+          The product range combines a universal digital control
+          board with visual display, a 1/3 hp 24VDC permanent
+          magnet motor, an on-board power supply and a selection
+          of adjustable operating functions.
+        </p>
+
+        <p>
+          Contractors, architects and building professionals can
+          review the model drawings and published specifications
+          to assess the appropriate configuration for their
+          entrance project.
+        </p>
+
+        <div class="or-intro-bottom">
+          <div>
+            <strong>Model Selection</strong>
+            <span>Five push series references</span>
+          </div>
+          <div>
+            <strong>Door Arrangements</strong>
+            <span>Single and dual configurations</span>
+          </div>
+          <div>
+            <strong>Finish Selection</strong>
+            <span>Two anodized finish options</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 04 / MODEL CONFIGURATION -->
+<section class="or-section or-config-section" id="or-models">
+  <div class="or-wrap">
+
+    <div class="or-config-heading">
+      <div>
+        <span class="or-eyebrow">Model Selection</span>
+        <h2 class="or-heading">Find the Right Push Operator Configuration</h2>
+      </div>
+      <p>
+        Compare the model references below and open the relevant
+        technical drawing for the configuration you are specifying.
+      </p>
+    </div>
+
+    <div class="or-config-list">
+
+      <div class="or-config-row">
+        <span class="or-config-index">01</span>
+        <div class="or-config-image">
+          <img src="https://omegaautomatics.com/images/surface-mount-lh-push.png"
+               alt="PS-L left hand push operator">
+        </div>
+        <div class="or-config-name">
+          <span>PS-L</span>
+          <h3>Left Hand Push</h3>
+        </div>
+        <div class="or-config-detail">
+          Single-door left-hand push configuration.
+        </div>
+        <a class="or-text-link"
+           href="https://omegaautomatics.com/images/pdf/PS-L2022.pdf"
+           target="_blank" rel="noopener">Drawing →</a>
+      </div>
+
+      <div class="or-config-row">
+        <span class="or-config-index">02</span>
+        <div class="or-config-image">
+          <img src="https://omegaautomatics.com/images/surface-mount-rh-push-large.png"
+               alt="PS-R right hand push operator">
+        </div>
+        <div class="or-config-name">
+          <span>PS-R</span>
+          <h3>Right Hand Push</h3>
+        </div>
+        <div class="or-config-detail">
+          Single-door right-hand push configuration.
+        </div>
+        <a class="or-text-link"
+           href="https://omegaautomatics.com/images/pdf/PS-R2022.pdf"
+           target="_blank" rel="noopener">Drawing →</a>
+      </div>
+
+      <div class="or-config-row">
+        <span class="or-config-index">03</span>
+        <div class="or-config-image">
+          <img src="https://omegaautomatics.com/images/surface-mount-dual-push.png"
+               alt="PS-AA dual active push operator">
+        </div>
+        <div class="or-config-name">
+          <span>PS-AA</span>
+          <h3>Dual Active Push</h3>
+        </div>
+        <div class="or-config-detail">
+          Active / active dual-door arrangement.
+        </div>
+        <a class="or-text-link"
+           href="https://omegaautomatics.com/images/pdf/PS-AA2022.pdf"
+           target="_blank" rel="noopener">Drawing →</a>
+      </div>
+
+      <div class="or-config-row">
+        <span class="or-config-index">04</span>
+        <div class="or-config-image">
+          <img src="https://omegaautomatics.com/images/surface-mount-dual-push.png"
+               alt="PS-AM dual push operator">
+        </div>
+        <div class="or-config-name">
+          <span>PS-AM</span>
+          <h3>Active / Manual</h3>
+        </div>
+        <div class="or-config-detail">
+          Active and manual dual-door arrangement.
+        </div>
+        <a class="or-text-link"
+           href="https://omegaautomatics.com/images/pdf/PS-AM2022.pdf"
+           target="_blank" rel="noopener">Drawing →</a>
+      </div>
+
+      <div class="or-config-row">
+        <span class="or-config-index">05</span>
+        <div class="or-config-image">
+          <img src="https://omegaautomatics.com/images/surface-mount-dual-push.png"
+               alt="PS-MA dual push operator">
+        </div>
+        <div class="or-config-name">
+          <span>PS-MA</span>
+          <h3>Manual / Active</h3>
+        </div>
+        <div class="or-config-detail">
+          Manual and active dual-door arrangement.
+        </div>
+        <a class="or-text-link"
+           href="https://omegaautomatics.com/images/pdf/PS-MA2022.pdf"
+           target="_blank" rel="noopener">Drawing →</a>
+      </div>
+
+    </div>
+
+    <p style="font-size:11px;color:#716E69;margin-top:17px">
+      Refer to the individual model drawings to confirm the
+      arrangement and installation details for your project.
+    </p>
+
+  </div>
+</section>
+
+<!-- 05 / APPLICATION AND DESIGN -->
+<section class="or-section" id="or-applications">
+  <div class="or-wrap">
+    <div class="or-app-layout">
+
+      <div class="or-app-visual">
+        <img src="https://omegaautomatics.com/images/surface-mount-rh-push-large.png"
+             alt="Omega surface mount right hand push automatic door operator">
+        <div class="or-app-visual-caption">
+          <span>Surface Mount Operator</span>
+          <span>OA100 · Push Series</span>
+        </div>
+      </div>
+
+      <div class="or-app-copy">
+        <span class="or-eyebrow">Designed Around Entrance Requirements</span>
+        <h2 class="or-heading">
+          Configure Your Swing Door System Around the Project
+        </h2>
+
+        <p>
+          Selecting an automatic swing door operator involves more
+          than choosing a product model. Door handing, single or
+          dual-door arrangements, available mounting space, locking
+          requirements and the intended entrance layout all matter
+          when reviewing a suitable configuration.
+        </p>
+
+        <p>
+          The OA100 Surface Mount Push Series provides multiple
+          model references and technical documentation to support
+          that selection process.
+        </p>
+
+        <div class="or-app-points">
+          <div class="or-app-point">
+            <b>01</b>
+            <span><strong>Door Handing</strong><br>Review left-hand and right-hand push arrangements.</span>
+          </div>
+          <div class="or-app-point">
+            <b>02</b>
+            <span><strong>Door Arrangement</strong><br>Compare single-door and dual-door model references.</span>
+          </div>
+          <div class="or-app-point">
+            <b>03</b>
+            <span><strong>Installation Details</strong><br>Check header dimensions and model-specific drawings.</span>
+          </div>
+          <div class="or-app-point">
+            <b>04</b>
+            <span><strong>Operating Requirements</strong><br>Review the listed control, lock and adjustment functions.</span>
+          </div>
+        </div>
+
+        <div style="margin-top:23px">
+          <a class="or-text-link" href="https://omegaautomatics.com/specifications">
+            Explore Door Swing Configurations →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 06 / TECHNICAL SPECIFICATIONS -->
+<section class="or-section or-paper" id="or-specifications">
+  <div class="or-wrap">
+
+    <div class="or-spec-header">
+      <div>
+        <span class="or-eyebrow">Product Data</span>
+        <h2 class="or-heading">OA100 Push Operator Specifications</h2>
+      </div>
+      <p>
+        Review the published technical information for power,
+        motor, door capacity, header dimensions, control functions
+        and available finishes.
+      </p>
+    </div>
+
+    <div class="or-spec-layout">
+
+      <div>
+        <table class="or-spec-table">
+          <thead>
+            <tr>
+              <th>Specification</th>
+              <th>Published Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Power Supply</td><td>120VAC, 60Hz</td></tr>
+            <tr><td>Door Capacity</td><td>Up to 450 lbs</td></tr>
+            <tr><td>Header Lengths</td><td>39" and 41" standard; custom on request</td></tr>
+            <tr><td>Header Dimensions</td><td>5" depth × 4½" height</td></tr>
+            <tr><td>Standard Header Width</td><td>39" for a 36" door</td></tr>
+            <tr><td>Control Board</td><td>Universal digital control board with visual display</td></tr>
+            <tr><td>DC Motor</td><td>1/3 hp, 24VDC permanent magnet</td></tr>
+            <tr><td>On-Board Power Supply</td><td>24VDC, 1.2A</td></tr>
+            <tr><td>Position Switch</td><td>Magnetic position reader included</td></tr>
+            <tr><td>Electric Lock Input</td><td>Fail-safe / fail-secure</td></tr>
+            <tr><td>Status Output</td><td>Open / closed dry contact monitoring</td></tr>
+            <tr><td>SM-XP Option</td><td>Selectable surface mount stack pressure compensation</td></tr>
+            <tr><td>Fire Relay</td><td>Included</td></tr>
+            <tr><td>Finish Options</td><td>Anodized clear and anodized black</td></tr>
+            <tr><td>Temperature Range</td><td>-30°C to +50°C</td></tr>
+            <tr><td>Origin</td><td>Vaughan, Ontario, Canada</td></tr>
+            <tr><td>Warranty</td><td>1 year parts from date of invoice</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="or-spec-aside">
+        <span class="or-eyebrow">At a Glance</span>
+        <h3>Key Product Parameters</h3>
+        <p>
+          A quick reference to several important published
+          specifications of the OA100 Surface Mount Push Series.
+        </p>
+
+        <div class="or-spec-highlight">
+          <strong>Up to 450 lbs</strong>
+          <span>Published door capacity</span>
+        </div>
+        <div class="or-spec-highlight">
+          <strong>1/3 hp · 24VDC</strong>
+          <span>Permanent magnet motor</span>
+        </div>
+        <div class="or-spec-highlight">
+          <strong>120VAC · 60Hz</strong>
+          <span>Power supply</span>
+        </div>
+        <div class="or-spec-highlight">
+          <strong>39" & 41"</strong>
+          <span>Standard header lengths</span>
+        </div>
+        <div class="or-spec-highlight">
+          <strong>-30°C to +50°C</strong>
+          <span>Published temperature range</span>
+        </div>
+
+        <a class="or-btn"
+           href="https://omegaautomatics.com/images/pdf/OA-100-Technical-Features-and-Functional-Descriptions.pdf"
+           target="_blank" rel="noopener"
+           style="width:100%;margin-top:17px">
+          Full Technical Document ↓
+        </a>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- 07 / KEY FEATURES -->
+<section class="or-section or-feature-dark" id="or-features">
+  <div class="or-wrap">
+
+    <div class="or-feature-top">
+      <div>
+        <span class="or-eyebrow">Operating Functions</span>
+        <h2 class="or-heading">
+          Control Features for Configurable Door Operation
+        </h2>
+        <div class="or-line"></div>
+      </div>
+
+      <p class="or-description">
+        The OA100 Surface Mount Push Series includes a range of
+        selectable and adjustable functions. These features help
+        configure door movement, latching behaviour and control
+        interfaces in line with the specific installation
+        requirements.
+      </p>
+    </div>
+
+    <div class="or-feature-matrix">
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">01 / MOVEMENT</span>
+        <h3>Push & Go</h3>
+        <p>A selectable function listed in the operator's published feature set.</p>
+      </div>
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">02 / RESPONSE</span>
+        <h3>Obstacle Detection</h3>
+        <p>Reversible on opening, as described in the product specifications.</p>
+      </div>
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">03 / CLOSING</span>
+        <h3>Adjustable Speed</h3>
+        <p>Opening and closing speeds can be adjusted.</p>
+      </div>
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">04 / FORCE</span>
+        <h3>Closing Force</h3>
+        <p>Selectable closing force settings.</p>
+      </div>
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">05 / LATCHING</span>
+        <h3>Latch Assist</h3>
+        <p>Selectable before opening and closing, with time and force adjustment.</p>
+      </div>
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">06 / POSITION</span>
+        <h3>Latching Area</h3>
+        <p>Adjustable latching position and closing speed in the latch zone.</p>
+      </div>
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">07 / CONTROL</span>
+        <h3>Back Check</h3>
+        <p>Adjustable back-check speed and position.</p>
+      </div>
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">08 / INTERFACE</span>
+        <h3>Electric Lock Input</h3>
+        <p>Fail-safe and fail-secure input options.</p>
+      </div>
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">09 / MONITORING</span>
+        <h3>Open / Closed Status</h3>
+        <p>Dry contact output for remote door status monitoring.</p>
+      </div>
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">10 / DETECTION</span>
+        <h3>Presence Detector Inputs</h3>
+        <p>Presence detector inputs are listed in the product features.</p>
+      </div>
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">11 / INSTALLATION</span>
+        <h3>Extendable Spindle</h3>
+        <p>Options are available for non-standard applications.</p>
+      </div>
+
+      <div class="or-feature-cell">
+        <span class="or-feature-no">12 / POWER</span>
+        <h3>Fire Relay</h3>
+        <p>A fire relay is included in the published specifications.</p>
+      </div>
+
+    </div>
+
+    <p style="color:rgba(255,255,255,.55);font-size:11px;margin-top:23px">
+      Refer to Omega's technical features document and installation
+      instructions for model-specific details and operating settings.
+    </p>
+
+  </div>
+</section>
+
+<!-- 08 / FINISH OPTIONS -->
+<section class="or-section" id="or-finishes">
+  <div class="or-wrap">
+    <div class="or-finish-layout">
+
+      <div class="or-finish-intro">
+        <span class="or-eyebrow">Architectural Finish Options</span>
+        <h2 class="or-heading">Choose a Finish for Your Entrance Design</h2>
+        <div class="or-line"></div>
+        <p>
+          The OA100 Surface Mount Push Series is listed with two
+          anodized finish options. Confirm the preferred finish
+          when discussing your project and operator configuration
+          with Omega.
+        </p>
+      </div>
+
+      <div class="or-finish-options">
+
+        <div class="or-finish-option">
+          <div class="or-finish-swatch"></div>
+          <div>
+            <h3>Anodized Clear Finish</h3>
+            <p>
+              The standard commercial finish option for the
+              Surface Mount Push Series.
+            </p>
+          </div>
+        </div>
+
+        <div class="or-finish-option">
+          <div class="or-finish-swatch black"></div>
+          <div>
+            <h3>Anodized Black Finish</h3>
+            <p>
+              An alternative finish option for projects with
+              a darker architectural appearance.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 09 / TECHNICAL DRAWINGS -->
+<section class="or-section or-paper" id="or-drawings">
+  <div class="or-wrap">
+
+    <div class="or-drawing-head">
+      <div>
+        <span class="or-eyebrow">Technical Resources</span>
+        <h2 class="or-heading">Product Drawings & Documentation</h2>
+      </div>
+      <p>
+        Access the technical PDF for each OA100 push operator model.
+        Use the appropriate drawing when reviewing the required
+        door arrangement and project documentation.
+      </p>
+    </div>
+
+    <div class="or-drawing-list">
+
+      <div class="or-drawing-row">
+        <span class="or-drawing-icon">⌁</span>
+        <div>
+          <h3>Push Arm Operator — Left Hand</h3>
+          <p>Left-hand single-door configuration</p>
+        </div>
+        <span class="or-drawing-code">PS-L2022.pdf</span>
+        <a class="or-btn" href="https://omegaautomatics.com/images/pdf/PS-L2022.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+      </div>
+
+      <div class="or-drawing-row">
+        <span class="or-drawing-icon">⌁</span>
+        <div>
+          <h3>Push Arm Operator — Right Hand</h3>
+          <p>Right-hand single-door configuration</p>
+        </div>
+        <span class="or-drawing-code">PS-R2022.pdf</span>
+        <a class="or-btn" href="https://omegaautomatics.com/images/pdf/PS-R2022.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+      </div>
+
+      <div class="or-drawing-row">
+        <span class="or-drawing-icon">⌁</span>
+        <div>
+          <h3>Dual Push Operators — Active / Active</h3>
+          <p>Dual active-door arrangement</p>
+        </div>
+        <span class="or-drawing-code">PS-AA2022.pdf</span>
+        <a class="or-btn" href="https://omegaautomatics.com/images/pdf/PS-AA2022.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+      </div>
+
+      <div class="or-drawing-row">
+        <span class="or-drawing-icon">⌁</span>
+        <div>
+          <h3>Dual Push Operators — Active / Manual</h3>
+          <p>Active and manual door arrangement</p>
+        </div>
+        <span class="or-drawing-code">PS-AM2022.pdf</span>
+        <a class="or-btn" href="https://omegaautomatics.com/images/pdf/PS-AM2022.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+      </div>
+
+      <div class="or-drawing-row">
+        <span class="or-drawing-icon">⌁</span>
+        <div>
+          <h3>Dual Push Operators — Manual / Active</h3>
+          <p>Manual and active door arrangement</p>
+        </div>
+        <span class="or-drawing-code">PS-MA2022.pdf</span>
+        <a class="or-btn" href="https://omegaautomatics.com/images/pdf/PS-MA2022.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+      </div>
+
+      <div class="or-drawing-row">
+        <span class="or-drawing-icon">⌁</span>
+        <div>
+          <h3>OA100 Technical Features & Functional Descriptions</h3>
+          <p>Product feature and operating information</p>
+        </div>
+        <span class="or-drawing-code">Technical PDF</span>
+        <a class="or-btn" href="https://omegaautomatics.com/images/pdf/OA-100-Technical-Features-and-Functional-Descriptions.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+      </div>
+
+    </div>
+
+    <div style="margin-top:24px">
+      <a class="or-text-link" href="https://omegaautomatics.com/downloads">
+        Visit Omega Downloads →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- 10 / RELATED PRODUCT LINKS -->
+<section class="or-section" id="or-related">
+  <div class="or-wrap">
+
+    <div style="max-width:700px;margin-bottom:35px">
+      <span class="or-eyebrow">Explore Other Omega Systems</span>
+      <h2 class="or-heading">Compare Related Automatic Entrance Solutions</h2>
+      <p class="or-description">
+        Depending on your building design and door arrangement,
+        another Omega operator or entrance system may be more
+        appropriate. Explore these related product ranges.
+      </p>
+    </div>
+
+    <div class="or-related">
+
+      <a class="or-related-item" href="https://omegaautomatics.com/surface-mount-pull-operators.php">
+        <span>OA100 · SURFACE MOUNT</span>
+        <h3>Surface Mount Pull Operators</h3>
+        <p>Explore the pull-arm product range and its model configurations.</p>
+        <b>Explore Pull Series →</b>
+      </a>
+
+      <a class="or-related-item" href="https://omegaautomatics.com/bottom-load-centre-spindle-operators.php">
+        <span>OA100 · BOTTOM LOAD</span>
+        <h3>Centre Spindle Operators</h3>
+        <p>Review concealed bottom-load centre spindle swing operators.</p>
+        <b>Explore Centre Spindle →</b>
+      </a>
+
+      <a class="or-related-item" href="https://omegaautomatics.com/bottom-load-center-hung-operators.php">
+        <span>OA100 · BOTTOM LOAD</span>
+        <h3>Center Hung Operators</h3>
+        <p>Explore the bottom-load centre hung operator configuration.</p>
+        <b>View Operator →</b>
+      </a>
+
+      <a class="or-related-item" href="https://omegaautomatics.com/full-breakout-sliding-systems.php">
+        <span>OA300 · SLIDING</span>
+        <h3>Full Breakout Sliding Systems</h3>
+        <p>Explore automatic sliding entrance systems with breakout configurations.</p>
+        <b>Explore Sliding Systems →</b>
+      </a>
+
+      <a class="or-related-item" href="https://omegaautomatics.com/fixed-sidelight-sliding-systems.php">
+        <span>OA300 · SLIDING</span>
+        <h3>Fixed Sidelight Sliding Systems</h3>
+        <p>Review automatic sliding systems with fixed sidelight panels.</p>
+        <b>View Sliding Systems →</b>
+      </a>
+
+      <a class="or-related-item" href="https://omegaautomatics.com/accessories">
+        <span>ACCESSORIES & PARTS</span>
+        <h3>Accessories & OEM Parts</h3>
+        <p>Browse Omega motors, boards, arms, hardware and replacement parts.</p>
+        <b>Explore Accessories →</b>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- 11 / FAQ -->
+<section class="or-section or-paper" id="or-faq">
+  <div class="or-wrap">
+    <div class="or-faq-layout">
+
+      <div class="or-faq-intro">
+        <span class="or-eyebrow">Product Questions</span>
+        <h2 class="or-heading">Surface Mount Push Operators FAQs</h2>
+        <div class="or-line"></div>
+        <p>
+          Information about the OA100 push operator range,
+          available configurations, technical specifications
+          and product documentation.
+        </p>
+        <a class="or-text-link" href="https://omegaautomatics.com/contact">
+          Ask Omega a Question →
+        </a>
+      </div>
+
+      <div class="or-faq-list">
+
+        <details class="or-faq-item">
+          <summary>What is a surface mount push door operator?</summary>
+          <p>
+            It is an automatic swing door operator installed
+            above the door in a surface-mounted arrangement.
+            A push-arm configuration is used to push the
+            door panel open.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>Which models are available in the OA100 push series?</summary>
+          <p>
+            The published model range includes PS-L, PS-R,
+            PS-AA, PS-AM and PS-MA.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>Does the series support single and dual doors?</summary>
+          <p>
+            Yes. The listed model range includes left-hand
+            and right-hand single-door arrangements as well
+            as dual-door configurations.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>What is the maximum published door capacity?</summary>
+          <p>
+            The product specifications list a door capacity
+            of up to 450 lbs. Confirm project suitability
+            with Omega before specifying the operator.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>What power supply does the operator require?</summary>
+          <p>
+            The published power supply is 120VAC, 60Hz.
+            The product also lists an on-board 24VDC,
+            1.2A power supply.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>What are the standard header lengths?</summary>
+          <p>
+            The standard header lengths are 39" and 41".
+            Custom lengths are available on request.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>What does PS-AA mean?</summary>
+          <p>
+            PS-AA is the dual active/active push operator
+            configuration listed in the product range.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>What are PS-AM and PS-MA configurations?</summary>
+          <p>
+            PS-AM represents an active/manual arrangement,
+            while PS-MA represents a manual/active arrangement.
+            Refer to the respective drawings for model details.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>Can the opening and closing speeds be adjusted?</summary>
+          <p>
+            Yes. Adjustable opening and closing speeds are
+            included in the published key features.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>Does the OA100 push operator include Push & Go?</summary>
+          <p>
+            Push & Go is listed as a selectable feature
+            in the product information.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>Which finish options are available?</summary>
+          <p>
+            The two published options are anodized clear
+            and anodized black finishes.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>Does the operator support electric locks?</summary>
+          <p>
+            The specifications list an electric lock input
+            with fail-safe and fail-secure options.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>What is the published temperature range?</summary>
+          <p>
+            The product information lists an operating
+            temperature range of -30°C to +50°C.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>Is a magnetic position reader included?</summary>
+          <p>
+            Yes. The published specifications list an
+            included magnetic position reader.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>Where can I find the technical drawings?</summary>
+          <p>
+            Model-specific PDF drawings for PS-L, PS-R,
+            PS-AA, PS-AM and PS-MA are available in the
+            Technical Resources section of this page.
+          </p>
+        </details>
+
+        <details class="or-faq-item">
+          <summary>What warranty is listed for the product?</summary>
+          <p>
+            The published product page lists a one-year
+            parts warranty from the date of invoice.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 / FINAL PROJECT ENQUIRY -->
+<section class="or-final-cta">
+  <div class="or-wrap">
+    <div class="or-final-inner">
+
+      <div>
+        <span class="or-eyebrow">Start a Project Discussion</span>
+        <h2>Planning a Commercial Automatic Swing Door Installation?</h2>
+        <p>
+          Share your project details, door configuration and
+          technical requirements with Omega. Our team can help
+          you review the available operator options and
+          product documentation.
+        </p>
+      </div>
+
+      <div class="or-final-actions">
+        <a class="or-btn" href="https://omegaautomatics.com/contact">
+          Request a Quote →
+        </a>
+        <a class="or-btn or-btn-ghost" href="tel:+19056708008">
+          Call 905-670-8008
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</div>
