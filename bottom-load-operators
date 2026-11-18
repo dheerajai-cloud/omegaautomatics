@@ -1,0 +1,754 @@
+
+<div id="omega-center-hung">
+<style>
+#omega-center-hung{
+ --red:#e3231b;--gold:#c5a064;--dark:#101216;
+ --text:#292929;--muted:#77736d;--light:#f8f7f4;
+ --line:#e9e5de;
+ font-family:Georgia,"Times New Roman",serif;
+ color:var(--text);background:#fff;width:100%;overflow:hidden
+}
+#omega-center-hung *{box-sizing:border-box}
+#omega-center-hung img{display:block;max-width:100%;height:auto}
+#omega-center-hung a{text-decoration:none}
+#omega-center-hung .wrap{width:min(1120px,90%);margin:auto}
+#omega-center-hung .section{padding:76px 0}
+#omega-center-hung .light{background:var(--light)}
+#omega-center-hung .dark{background:var(--dark);color:#fff}
+#omega-center-hung .eyebrow{
+ color:var(--gold);font-size:11px;letter-spacing:2px;
+ text-transform:uppercase;font-weight:bold
+}
+#omega-center-hung h1,#omega-center-hung h2,
+#omega-center-hung h3{font-weight:normal}
+#omega-center-hung .heading{
+ font-size:35px;line-height:1.22;margin:12px 0 17px;color:#202020
+}
+#omega-center-hung .heading em{color:var(--gold)}
+#omega-center-hung .dark .heading{color:#fff}
+#omega-center-hung .copy{
+ font-size:14px;line-height:1.9;color:#6d6963
+}
+#omega-center-hung .dark .copy{color:#c7c4be}
+#omega-center-hung .btn{
+ display:inline-flex;align-items:center;justify-content:center;
+ background:var(--red);border:1px solid var(--red);
+ color:#fff!important;padding:13px 20px;
+ font-size:11px;font-weight:bold;letter-spacing:.5px;
+ text-transform:uppercase;transition:.2s
+}
+#omega-center-hung .btn:hover{background:#b91d17;border-color:#b91d17}
+#omega-center-hung .outline{
+ background:transparent;border-color:rgba(255,255,255,.45)
+}
+#omega-center-hung .outline:hover{background:var(--red);border-color:var(--red)}
+#omega-center-hung .rule{
+ height:1px;background:var(--line);margin:22px 0 28px;position:relative
+}
+#omega-center-hung .rule:before{
+ content:"";position:absolute;top:-1px;left:0;
+ width:55px;height:2px;background:var(--gold)
+}
+#omega-center-hung .center{text-align:center}
+#omega-center-hung .center .copy{max-width:780px;margin:0 auto}
+
+/* HERO */
+#omega-center-hung .hero{
+ padding:76px 0;color:#fff;
+ background:linear-gradient(90deg,rgba(8,10,13,.97),rgba(8,10,13,.91))
+}
+#omega-center-hung .hero-grid{
+ display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center
+}
+#omega-center-hung .hero h1{
+ color:#fff;font-size:48px;line-height:1.08;margin:14px 0 22px
+}
+#omega-center-hung .hero h1 em{color:var(--gold)}
+#omega-center-hung .hero-copy{
+ color:#d1cec8;font-size:14px;line-height:1.9;margin-bottom:24px
+}
+#omega-center-hung .meta{
+ display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:27px 0
+}
+#omega-center-hung .meta div{border-top:1px solid var(--gold);padding-top:12px}
+#omega-center-hung .meta strong{
+ display:block;color:var(--gold);font-size:11px;margin-bottom:7px
+}
+#omega-center-hung .meta span{color:#d0cdc7;font-size:11px;line-height:1.6}
+#omega-center-hung .hero-actions{display:flex;gap:11px;flex-wrap:wrap}
+#omega-center-hung .hero-images{
+ display:grid;grid-template-columns:1fr 1fr;gap:14px
+}
+#omega-center-hung .hero-image{
+ background:#fff;padding:12px;text-align:center
+}
+#omega-center-hung .hero-image:first-child{grid-column:1/-1}
+#omega-center-hung .hero-image img{width:100%;height:150px;object-fit:contain}
+#omega-center-hung .hero-image:first-child img{height:205px}
+#omega-center-hung .hero-image strong{
+ display:block;color:#292929;font-size:10px;
+ border-top:1px solid #eee;padding-top:10px;margin-top:9px
+}
+
+/* INTRO */
+#omega-center-hung .two-col{
+ display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center
+}
+#omega-center-hung .image-panel{background:#f4f2ee;padding:20px}
+#omega-center-hung .image-panel img{width:100%;height:300px;object-fit:contain}
+#omega-center-hung .list{list-style:none;padding:0;margin:20px 0 0}
+#omega-center-hung .list li{
+ position:relative;padding:12px 0 12px 23px;
+ border-bottom:1px solid var(--line);font-size:13px;
+ color:#5d5954;line-height:1.7
+}
+#omega-center-hung .list li:before{
+ content:"";position:absolute;left:2px;top:19px;
+ width:7px;height:7px;background:var(--gold)
+}
+
+/* CONFIGURATIONS */
+#omega-center-hung .model-grid{
+ display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:35px
+}
+#omega-center-hung .model{
+ background:#fff;border:1px solid var(--line);
+ border-top:3px solid var(--gold);padding:20px;text-align:center;
+ transition:.2s
+}
+#omega-center-hung .model:hover{
+ transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.07)
+}
+#omega-center-hung .model img{
+ width:100%;height:135px;object-fit:contain;margin-bottom:14px
+}
+#omega-center-hung .model h3{font-size:17px;color:#222;margin:0 0 7px}
+#omega-center-hung .model-code{
+ color:var(--gold);font-size:11px;font-weight:bold;letter-spacing:1px
+}
+#omega-center-hung .model p{
+ color:#777;font-size:12px;line-height:1.7;min-height:58px;
+ margin:12px 0 16px
+}
+#omega-center-hung .model .btn{padding:11px 16px}
+
+/* CONFIG TABLE */
+#omega-center-hung .data-table{
+ width:100%;border-collapse:collapse;margin-top:30px;font-size:13px
+}
+#omega-center-hung .data-table th{
+ background:#17191d;color:#fff;text-align:left;padding:15px;font-weight:normal
+}
+#omega-center-hung .data-table td{
+ padding:14px 15px;border-bottom:1px solid var(--line);
+ color:#68635d;line-height:1.6
+}
+#omega-center-hung .data-table tr:nth-child(even) td{background:#f8f7f4}
+#omega-center-hung .data-table td:first-child{
+ color:#252525;font-weight:bold;width:18%
+}
+
+/* SYSTEM EXPLANATION */
+#omega-center-hung .concept{
+ display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center
+}
+#omega-center-hung .concept .image-panel img{height:280px}
+#omega-center-hung .point-grid{
+ display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px
+}
+#omega-center-hung .point{
+ background:#f8f7f4;border-left:2px solid var(--gold);padding:16px
+}
+#omega-center-hung .point strong{
+ display:block;color:#292929;font-size:13px;margin-bottom:6px
+}
+#omega-center-hung .point span{
+ color:#777;font-size:11px;line-height:1.7;display:block
+}
+
+/* TECHNICAL */
+#omega-center-hung .tech-grid{
+ display:grid;grid-template-columns:1fr 1fr;gap:40px;
+ align-items:start;margin-top:35px
+}
+#omega-center-hung .subheading{font-size:21px;color:#222;margin:0}
+#omega-center-hung .tech-table{width:100%;border-collapse:collapse;font-size:12px}
+#omega-center-hung .tech-table td{
+ padding:13px 11px;border-bottom:1px solid #eae6df;line-height:1.55
+}
+#omega-center-hung .tech-table tr:nth-child(odd) td{background:#f8f7f4}
+#omega-center-hung .tech-table td:first-child{
+ width:43%;color:#282828;font-weight:bold
+}
+#omega-center-hung .tech-table td:last-child{color:#716d67}
+#omega-center-hung .note{font-size:11px;line-height:1.8;color:#858078;margin-top:20px}
+
+/* FEATURES */
+#omega-center-hung .feature-grid{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ margin-top:35px;border-top:1px solid rgba(197,160,100,.45)
+}
+#omega-center-hung .feature{
+ padding:22px 20px;border-right:1px solid rgba(255,255,255,.12);
+ border-bottom:1px solid rgba(255,255,255,.12)
+}
+#omega-center-hung .feature:nth-child(3n){border-right:0}
+#omega-center-hung .feature small{color:var(--gold);font-size:10px;letter-spacing:1px}
+#omega-center-hung .feature h3{color:#fff;font-size:16px;margin:10px 0 8px}
+#omega-center-hung .feature p{color:#c1beb8;font-size:12px;line-height:1.8;margin:0}
+
+/* FINISHES */
+#omega-center-hung .finish-grid{
+ display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:32px
+}
+#omega-center-hung .finish{
+ padding:26px;background:#f7f6f3;border-left:3px solid var(--gold)
+}
+#omega-center-hung .finish small{color:var(--gold);font-size:10px;letter-spacing:1px}
+#omega-center-hung .finish h3{font-size:20px;color:#222;margin:10px 0}
+#omega-center-hung .finish p{font-size:13px;line-height:1.8;color:#6d6963;margin:0}
+
+/* PLANNING */
+#omega-center-hung .step-grid{
+ display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px
+}
+#omega-center-hung .step{padding:21px 17px;background:#fff;border-top:2px solid var(--gold)}
+#omega-center-hung .step .number{color:var(--gold);font-size:24px}
+#omega-center-hung .step h3{color:#292929;font-size:15px;margin:10px 0 8px}
+#omega-center-hung .step p{color:#777;font-size:12px;line-height:1.8;margin:0}
+
+/* DOCUMENTS */
+#omega-center-hung .drawing-grid{
+ display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:35px
+}
+#omega-center-hung .drawing{
+ padding:22px;background:#fff;border:1px solid var(--line);
+ box-shadow:0 5px 18px rgba(0,0,0,.035)
+}
+#omega-center-hung .drawing-mark{color:var(--gold);font-size:23px;margin-bottom:12px}
+#omega-center-hung .drawing h3{color:#292929;font-size:15px;margin:0 0 8px}
+#omega-center-hung .drawing p{color:#777;font-size:11px;margin:0 0 15px}
+#omega-center-hung .drawing a{
+ display:block;background:#f5f3ef;border:1px solid #e9e5de;
+ padding:11px;text-align:center;color:#3c3935;font-size:11px
+}
+#omega-center-hung .drawing a:hover{
+ background:var(--red);color:#fff;border-color:var(--red)
+}
+
+/* FAQ - TWO COLUMNS DESKTOP, SAME ACCORDION STYLE */
+#omega-center-hung .faq-layout{
+ display:grid;grid-template-columns:.78fr 1.22fr;gap:48px;
+ align-items:start;margin-top:35px
+}
+#omega-center-hung .faq-intro{position:sticky;top:25px}
+#omega-center-hung .faq-intro .heading{font-size:32px}
+#omega-center-hung .faq-list{
+ display:grid;grid-template-columns:1fr 1fr;gap:0 26px;align-items:start
+}
+#omega-center-hung .faq-item{border-bottom:1px solid var(--line)}
+#omega-center-hung .faq-item details{padding:17px 0}
+#omega-center-hung .faq-item summary{
+ cursor:pointer;list-style:none;display:flex;
+ justify-content:space-between;align-items:flex-start;gap:13px;
+ color:#292929;font-size:14px;line-height:1.55
+}
+#omega-center-hung .faq-item summary::-webkit-details-marker{display:none}
+#omega-center-hung .faq-item summary:after{
+ content:"+";display:flex;align-items:center;justify-content:center;
+ flex:0 0 23px;width:23px;height:23px;border:1px solid var(--gold);
+ color:var(--gold);font-size:17px;line-height:1
+}
+#omega-center-hung .faq-item details[open] summary:after{
+ content:"−";background:var(--gold);color:#fff
+}
+#omega-center-hung .faq-item p{
+ color:#716d67;font-size:12px;line-height:1.85;
+ margin:12px 0 2px;padding-right:24px
+}
+#omega-center-hung .faq-item p a{color:#b51e18;text-decoration:underline}
+
+/* RELATED LINKS */
+#omega-center-hung .related{display:flex;flex-wrap:wrap;gap:13px 24px;margin-top:25px}
+#omega-center-hung .related a{
+ color:#a27d45;font-size:12px;border-bottom:1px solid #d9c8a9;padding-bottom:4px
+}
+#omega-center-hung .related a:hover{color:var(--red)}
+
+/* CTA */
+#omega-center-hung .cta{
+ padding:68px 0;color:#fff;
+ background:linear-gradient(90deg,rgba(8,10,13,.97),rgba(8,10,13,.89))
+}
+#omega-center-hung .cta-inner{
+ display:flex;align-items:center;justify-content:space-between;gap:35px
+}
+#omega-center-hung .cta h2{
+ color:#fff;font-size:33px;line-height:1.25;margin:12px 0
+}
+#omega-center-hung .cta p{color:#c9c6c0;font-size:13px;line-height:1.8;max-width:670px}
+#omega-center-hung .cta-actions{display:flex;gap:10px;flex-wrap:wrap;flex-shrink:0}
+
+/* RESPONSIVE */
+@media(max-width:850px){
+ #omega-center-hung .hero-grid,#omega-center-hung .two-col,
+ #omega-center-hung .concept,#omega-center-hung .tech-grid{gap:28px}
+ #omega-center-hung .hero h1{font-size:42px}
+ #omega-center-hung .model-grid{grid-template-columns:repeat(2,1fr)}
+ #omega-center-hung .feature-grid{grid-template-columns:repeat(2,1fr)}
+ #omega-center-hung .feature:nth-child(3n){border-right:1px solid rgba(255,255,255,.12)}
+ #omega-center-hung .feature:nth-child(2n){border-right:0}
+ #omega-center-hung .step-grid{grid-template-columns:repeat(2,1fr)}
+ #omega-center-hung .faq-layout{grid-template-columns:1fr;gap:20px}
+ #omega-center-hung .faq-intro{position:static}
+ #omega-center-hung .cta-inner{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:600px){
+ #omega-center-hung .wrap{width:90%}
+ #omega-center-hung .section{padding:55px 0}
+ #omega-center-hung .heading{font-size:29px}
+ #omega-center-hung .hero{padding:58px 0}
+ #omega-center-hung .hero-grid,#omega-center-hung .two-col,
+ #omega-center-hung .concept,#omega-center-hung .tech-grid{grid-template-columns:1fr}
+ #omega-center-hung .hero h1{font-size:38px}
+ #omega-center-hung .meta{gap:9px}
+ #omega-center-hung .meta span{font-size:10px}
+ #omega-center-hung .hero-image img{height:115px}
+ #omega-center-hung .hero-image:first-child img{height:160px}
+ #omega-center-hung .model-grid,#omega-center-hung .finish-grid,
+ #omega-center-hung .drawing-grid{grid-template-columns:1fr}
+ #omega-center-hung .feature-grid{grid-template-columns:1fr}
+ #omega-center-hung .feature,#omega-center-hung .feature:nth-child(3n){border-right:0}
+ #omega-center-hung .step-grid{grid-template-columns:1fr 1fr}
+ #omega-center-hung .point-grid{grid-template-columns:1fr}
+ #omega-center-hung .faq-list{grid-template-columns:1fr}
+ #omega-center-hung .faq-intro .heading{font-size:28px}
+ #omega-center-hung .data-table{font-size:11px}
+ #omega-center-hung .data-table th,#omega-center-hung .data-table td{padding:11px 8px}
+ #omega-center-hung .tech-table{font-size:11px}
+ #omega-center-hung .cta h2{font-size:28px}
+ #omega-center-hung .cta-actions{width:100%}
+ #omega-center-hung .cta-actions .btn{width:100%}
+}
+</style>
+
+<!-- HERO -->
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow">Section Two — Automatic Swing Door Systems</div>
+   <h1>Bottom Load <em>Center Hung</em> Operators</h1>
+   <p class="hero-copy">
+    The Omega OA100-BL Centre Hung Operator is a concealed automatic swing door solution for entrances where overhead clearance is restricted or a clean, uninterrupted transom line is architecturally important. The complete operator is concealed within the door header, driving the panel through a centre-hung arm and bottom pivot. Designed for commercial, institutional and condominium projects, the CH Series offers left-hand, right-hand and dual-door configurations.
+   </p>
+
+   <div class="meta">
+    <div><strong>Center Hung Series</strong><span>CH-L · CH-R · CH-AA<br>CH-AM · CH-MA</span></div>
+    <div><strong>Anodized Clear</strong><span>Standard Commercial</span></div>
+    <div><strong>Anodized Black</strong><span>Luxury & Design</span></div>
+   </div>
+
+   <div class="hero-actions">
+    <a class="btn" href="https://omegaautomatics.com/images/pdf/OA-100-Technical-Features-and-Functional-Descriptions.pdf" target="_blank" rel="noopener">Download Technical Features PDF</a>
+    <a class="btn outline" href="https://omegaautomatics.com/OA100%20-%20BL%20-%20CENTRE%20HUNG.html" target="_blank" rel="noopener">View Product Brochure</a>
+   </div>
+  </div>
+
+  <div class="hero-images">
+   <div class="hero-image">
+    <img src="https://omegaautomatics.com/images/bottom-load-ch-lh.png" alt="Omega OA100-BL bottom load center hung left hand concealed door operator">
+    <strong>CENTRE HUNG LEFT HAND</strong>
+   </div>
+   <div class="hero-image">
+    <img src="https://omegaautomatics.com/images/bottom-load-ch-rh-large.png" alt="Omega OA100-BL bottom load center hung right hand concealed door operator">
+    <strong>CENTRE HUNG RIGHT HAND</strong>
+   </div>
+   <div class="hero-image">
+    <img src="https://omegaautomatics.com/images/bottom-load-ch-dual.png" alt="Omega dual active bottom load center hung automatic door operator">
+    <strong>DUAL ACTIVE CENTRE HUNG</strong>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- INTRO -->
+<section class="section">
+ <div class="wrap two-col">
+  <div>
+   <div class="eyebrow">OA100-BL — Concealed Centre Hung</div>
+   <h2 class="heading">A Concealed Automatic Door Operator for a <em>Clean Architectural Finish</em></h2>
+   <p class="copy">
+    The OA100-BL Centre Hung Series is designed to integrate the automatic door operator within the door header rather than expose a surface-mounted operator box. Its centre-hung arm and bottom-pivot arrangement allow the door panel to pivot about its own centre line.
+   </p>
+   <p class="copy">
+    This design is particularly relevant to monumental and all-glass entrance applications, as well as commercial and institutional projects where the appearance of the entrance and available overhead space influence operator selection.
+   </p>
+   <ul class="list">
+    <li>Entire operator concealed within the door header</li>
+    <li>Centre-hung arm and bottom-pivot door arrangement</li>
+    <li>Left-hand and right-hand single-door configurations</li>
+    <li>Dual active and active/manual arrangements</li>
+    <li>Designed for interior and exterior swing-door installations</li>
+    <li>Glass preparation and arm-mount detail drawings available</li>
+   </ul>
+  </div>
+  <div class="image-panel">
+   <img src="https://omegaautomatics.com/images/bottom-load-ch-rh-large.png" alt="Concealed Omega bottom load center hung automatic door operator">
+  </div>
+ </div>
+</section>
+
+<!-- CONFIGURATIONS -->
+<section class="section light">
+ <div class="wrap">
+  <div class="center">
+   <div class="eyebrow">Bottom Load — Center Hung Series</div>
+   <h2 class="heading">Explore the CH Series <em>Configurations</em></h2>
+   <p class="copy">
+    The OA100-BL Centre Hung range includes five model designations for single and dual-door entrances. Select the appropriate configuration based on door handing and whether the entrance requires two automatic leaves or an automatic/manual arrangement.
+   </p>
+  </div>
+
+  <div class="model-grid">
+   <article class="model">
+    <img src="https://omegaautomatics.com/images/bottom-load-ch-lh.png" alt="CH-L left hand center hung operator">
+    <h3>Left Hand</h3><div class="model-code">CH-L</div>
+    <p>Single-leaf centre hung configuration for a left-hand swing arrangement.</p>
+    <a class="btn" href="https://omegaautomatics.com/images/pdf/CH-L.pdf" target="_blank" rel="noopener">Download PDF</a>
+   </article>
+   <article class="model">
+    <img src="https://omegaautomatics.com/images/bottom-load-ch-rh-large.png" alt="CH-R right hand center hung operator">
+    <h3>Right Hand</h3><div class="model-code">CH-R</div>
+    <p>Single-leaf centre hung configuration for a right-hand swing arrangement.</p>
+    <a class="btn" href="https://omegaautomatics.com/images/pdf/CH-R.pdf" target="_blank" rel="noopener">Download PDF</a>
+   </article>
+   <article class="model">
+    <img src="https://omegaautomatics.com/images/bottom-load-ch-dual.png" alt="CH-AA dual active center hung operators">
+    <h3>Dual Active / Active</h3><div class="model-code">CH-AA</div>
+    <p>Two automatic leaves in a dual centre hung entrance arrangement.</p>
+    <a class="btn" href="https://omegaautomatics.com/images/pdf/DUAL-CH-AA.pdf" target="_blank" rel="noopener">Download PDF</a>
+   </article>
+   <article class="model">
+    <img src="https://omegaautomatics.com/images/bottom-load-ch-dual.png" alt="CH-AM active monitor center hung door configuration">
+    <h3>Dual Active / Monitor</h3><div class="model-code">CH-AM</div>
+    <p>Automatic active leaf paired with a monitor/manual leaf arrangement.</p>
+    <a class="btn" href="https://omegaautomatics.com/images/pdf/DUAL-CH-AM.pdf" target="_blank" rel="noopener">Download PDF</a>
+   </article>
+   <article class="model">
+    <img src="https://omegaautomatics.com/images/bottom-load-ch-dual.png" alt="CH-MA monitor active center hung door configuration">
+    <h3>Dual Monitor / Active</h3><div class="model-code">CH-MA</div>
+    <p>Monitor/manual leaf paired with an automatic active leaf arrangement.</p>
+    <a class="btn" href="https://omegaautomatics.com/images/pdf/DUAL-CH-MA.pdf" target="_blank" rel="noopener">Download PDF</a>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- CONFIGURATION REFERENCE -->
+<section class="section">
+ <div class="wrap">
+  <div class="eyebrow">Model Selection Guide</div>
+  <h2 class="heading">Center Hung Operator <em>Model Reference</em></h2>
+  <p class="copy">
+   Use the following model reference when reviewing door handing and the required operating arrangement. The corresponding technical drawings are available in the documentation section below.
+  </p>
+  <table class="data-table">
+   <thead><tr><th>Model</th><th>Configuration</th><th>Door Arrangement</th></tr></thead>
+   <tbody>
+    <tr><td>CH-L</td><td>Single — Left Hand</td><td>Single automatic leaf</td></tr>
+    <tr><td>CH-R</td><td>Single — Right Hand</td><td>Single automatic leaf</td></tr>
+    <tr><td>CH-AA</td><td>Dual — Active / Active</td><td>Two automatic leaves</td></tr>
+    <tr><td>CH-AM</td><td>Dual — Active / Monitor</td><td>Automatic / manual arrangement</td></tr>
+    <tr><td>CH-MA</td><td>Dual — Monitor / Active</td><td>Manual / automatic arrangement</td></tr>
+   </tbody>
+  </table>
+ </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section light">
+ <div class="wrap concept">
+  <div class="image-panel">
+   <img src="https://omegaautomatics.com/images/bottom-load-ch-dual.png" alt="Omega dual active centre hung concealed automatic swing door operator">
+  </div>
+  <div>
+   <div class="eyebrow">Concealed Centre Hung Design</div>
+   <h2 class="heading">How the Centre Hung <em>Door Arrangement Works</em></h2>
+   <p class="copy">
+    The Centre Hung configuration conceals the OA100 operator within the door header. A centre-hung arm connects the operator to the door panel, while the bottom pivot supports the door's centre-hung movement. The operator spindle acts as the top pivot point.
+   </p>
+   <p class="copy">
+    This arrangement differs from a surface-mounted swing door operator and from the Centre Spindle configuration. The centre-hung door pivots about its own centre line, making the correct arm, pivot, handing and door preparation details important during project planning.
+   </p>
+   <div class="point-grid">
+    <div class="point"><strong>Concealed Header</strong><span>The operator is integrated within the door header.</span></div>
+    <div class="point"><strong>Centre-Hung Arm</strong><span>The arm connects the operator to the door panel.</span></div>
+    <div class="point"><strong>Bottom Pivot</strong><span>The door uses a bottom-pivot centre-hung arrangement.</span></div>
+    <div class="point"><strong>Top Pivot Point</strong><span>The operator spindle acts as the door's top pivot point.</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- TECHNICAL SPECIFICATIONS -->
+<section class="section">
+ <div class="wrap">
+  <div class="eyebrow">OA100-BL Technical Information</div>
+  <h2 class="heading">Centre Hung Operator <em>Specifications</em></h2>
+  <p class="copy">
+   Review the published technical specifications for the Omega OA100-BL Centre Hung Series. These details support preliminary product evaluation, coordination and specification for automatic swing-door projects.
+  </p>
+
+  <div class="tech-grid">
+   <div>
+    <h3 class="subheading">Technical Specifications</h3><div class="rule"></div>
+    <table class="tech-table">
+     <tr><td>Mount Type</td><td>Bottom Load — Concealed</td></tr>
+     <tr><td>Power Supply</td><td>120VAC, 60Hz</td></tr>
+     <tr><td>Door Capacity</td><td>Up to 450 lbs</td></tr>
+     <tr><td>Control Board</td><td>Universal digital with visual display</td></tr>
+     <tr><td>DC Motor</td><td>1/3 HP, 24VDC permanent magnet</td></tr>
+     <tr><td>On-Board Power Supply</td><td>24VDC, 1.2A</td></tr>
+     <tr><td>Position Switch</td><td>Magnet reader included</td></tr>
+     <tr><td>Opening Angle</td><td>Up to 120°</td></tr>
+     <tr><td>Header Width × Height</td><td>4½″ × 4½″</td></tr>
+     <tr><td>Standard Header Width</td><td>39″ for a 36″ door</td></tr>
+     <tr><td>Electric Lock Input</td><td>Fail-Safe / Fail-Secure</td></tr>
+     <tr><td>Status Output</td><td>Dry-contact monitoring</td></tr>
+     <tr><td>Fire Relay</td><td>Included</td></tr>
+     <tr><td>Temperature Range</td><td>-30°C to +50°C</td></tr>
+     <tr><td>Origin</td><td>Vaughan, Ontario, Canada</td></tr>
+     <tr><td>Warranty</td><td>1 year parts from date of invoice</td></tr>
+    </table>
+   </div>
+
+   <div>
+    <h3 class="subheading">Door & Installation Details</h3><div class="rule"></div>
+    <table class="tech-table">
+     <tr><td>Operator Arrangement</td><td>Centre Hung — Bottom Load</td></tr>
+     <tr><td>Door Movement</td><td>Centre-hung arm and bottom pivot</td></tr>
+     <tr><td>Top Pivot</td><td>Operator spindle acts as top pivot point</td></tr>
+     <tr><td>Single-Door Models</td><td>CH-L / CH-R</td></tr>
+     <tr><td>Dual-Door Models</td><td>CH-AA / CH-AM / CH-MA</td></tr>
+     <tr><td>Glass Preparation</td><td>CH-G drawing available</td></tr>
+     <tr><td>Arm Mount Detail</td><td>Separate drawing available</td></tr>
+     <tr><td>Push & Go</td><td>Selectable</td></tr>
+     <tr><td>Obstacle Detection</td><td>Reversible on opening</td></tr>
+     <tr><td>Opening & Closing Speed</td><td>Adjustable</td></tr>
+     <tr><td>Closing Force</td><td>Adjustable settings</td></tr>
+     <tr><td>Electric Lock</td><td>Fail-Safe / Fail-Secure input</td></tr>
+     <tr><td>Latch Assist</td><td>Selectable before opening; closing function on XP version</td></tr>
+     <tr><td>Back Check</td><td>Adjustable speed and position</td></tr>
+     <tr><td>Presence Detector Inputs</td><td>Two external presence safety sensor inputs</td></tr>
+     <tr><td>Installation</td><td>Interior / Exterior swing doors</td></tr>
+    </table>
+   </div>
+  </div>
+  <p class="note">
+   Specifications are based on Omega's published product page and OA100 technical documentation. Confirm the selected model, door dimensions, glass preparation, clear opening and project-specific requirements with Omega before final specification.
+  </p>
+  <a class="btn" href="https://omegaautomatics.com/images/pdf/OA-100-Technical-Features-and-Functional-Descriptions.pdf" target="_blank" rel="noopener">Download Technical Features PDF</a>
+ </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section dark">
+ <div class="wrap">
+  <div class="eyebrow">OA100 Operating Functions</div>
+  <h2 class="heading">Control, Safety & Operating <em>Features</em></h2>
+  <p class="copy">
+   The OA100 platform includes adjustable door operation, access-control interfaces and monitoring functions. The following features are described in Omega's published technical documentation; some functions are version-dependent.
+  </p>
+
+  <div class="feature-grid">
+   <article class="feature"><small>01 — CONTROL</small><h3>Universal Digital Controller</h3><p>Digital control board with visual display for setup and programming.</p></article>
+   <article class="feature"><small>02 — ACTIVATION</small><h3>Push & Go</h3><p>Selectable function that activates powered operation following manual door movement.</p></article>
+   <article class="feature"><small>03 — SAFETY</small><h3>Opening Obstacle Detection</h3><p>Built-in opening-direction obstacle detection. The door stops when it encounters an obstruction and allows closing under standard spring power.</p></article>
+   <article class="feature"><small>04 — CLOSING</small><h3>Power Close</h3><p>Selectable function on the XP version to assist positive latching in the programmed latching area.</p></article>
+   <article class="feature"><small>05 — POWER</small><h3>On-Board Power Supply</h3><p>24VDC, 1.2A supply for common locks and accessories.</p></article>
+   <article class="feature"><small>06 — SPEED</small><h3>Adjustable Door Speed</h3><p>Opening and closing speeds can be adjusted for the installation.</p></article>
+   <article class="feature"><small>07 — FORCE</small><h3>Adjustable Closing Force</h3><p>Adjustable closing-force settings for operator configuration.</p></article>
+   <article class="feature"><small>08 — ACCESS CONTROL</small><h3>Electric Lock Input</h3><p>Selectable Fail-Safe or Fail-Secure electric lock settings.</p></article>
+   <article class="feature"><small>09 — LOCKING</small><h3>Electric Lock Delay</h3><p>Adjustable delay of 0.02–2.0 seconds between electric lock activation and the opening cycle.</p></article>
+   <article class="feature"><small>10 — WIND CONTROL</small><h3>Wind Force Dampening</h3><p>Wind Check feature engages the motor to reduce abrupt door speed and help prevent damage to the door, hinges and arms.</p></article>
+   <article class="feature"><small>11 — LATCHING</small><h3>Latch Assist</h3><p>Selectable Pull Before Open function helps prevent electric strike binding. Closing latch assist is available with the XP version.</p></article>
+   <article class="feature"><small>12 — POSITION</small><h3>Adjustable Latching Area</h3><p>Adjust the latching position and closing speed within the latching area.</p></article>
+   <article class="feature"><small>13 — BACK CHECK</small><h3>Adjustable Back Check</h3><p>Set door back-check speed and position for controlled movement.</p></article>
+   <article class="feature"><small>14 — MONITORING</small><h3>Open / Closed Status</h3><p>Dry-contact output for monitoring door status.</p></article>
+   <article class="feature"><small>15 — SENSORS</small><h3>Presence Detector Inputs</h3><p>Direct inputs for two external presence safety sensors.</p></article>
+   <article class="feature"><small>16 — TIMER</small><h3>Hold Open Timer</h3><p>Adjustable hold-open time from 1 to 99 seconds.</p></article>
+   <article class="feature"><small>17 — MEMORY</small><h3>Non-Volatile Memory</h3><p>Programmed settings are retained when power is lost.</p></article>
+   <article class="feature"><small>18 — POSITIONING</small><h3>Encoder Door Positioning</h3><p>Integrated encoder technology for precise positioning is available on the XP version.</p></article>
+   <article class="feature"><small>19 — SYSTEMS</small><h3>Smoke Evacuation Interface</h3><p>Connection capability for central operations systems used for smoke evacuation and stairway pressurization.</p></article>
+   <article class="feature"><small>20 — OPERATION</small><h3>Continuous-Duty Applications</h3><p>Technical documentation describes manual or automatic operation in continuous-duty traffic settings.</p></article>
+   <article class="feature"><small>21 — ACCESSORIES</small><h3>Washroom Package</h3><p>Connects washroom accessories without requiring a separate switching network board and door position switch.</p></article>
+   <article class="feature"><small>22 — RECORDING</small><h3>Cycle Count</h3><p>Cycle-count functionality is available to record the number of door cycles.</p></article>
+  </div>
+ </div>
+</section>
+
+<!-- FINISHES -->
+<section class="section">
+ <div class="wrap">
+  <div class="eyebrow">Architectural Finish Options</div>
+  <h2 class="heading">Finish Options for <em>Commercial & Design Projects</em></h2>
+  <p class="copy">
+   The current product page highlights anodized clear and anodized black finishes. The technical drawings also reference clear anodize, dark bronze, light bronze and custom finishes. Confirm the available finish selection for the specific model and project with Omega.
+  </p>
+  <div class="finish-grid">
+   <div class="finish">
+    <small>FINISH OPTION 01</small>
+    <h3>Anodized Clear</h3>
+    <p>Listed as the standard commercial finish for healthcare, institutional and commercial applications.</p>
+   </div>
+   <div class="finish">
+    <small>FINISH OPTION 02</small>
+    <h3>Anodized Black</h3>
+    <p>Listed for luxury condominiums, hotels and high-design commercial projects.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- PLANNING -->
+<section class="section light">
+ <div class="wrap">
+  <div class="eyebrow">Door Preparation & Project Coordination</div>
+  <h2 class="heading">Plan Your Centre Hung <em>Door Installation</em></h2>
+  <p class="copy">
+   A concealed centre hung operator requires coordination between the door, header, pivots, arm and glass preparation. Reviewing the model drawings early helps the project team identify the required arrangement and coordinate the work with the door and glazing trades.
+  </p>
+  <div class="step-grid">
+   <div class="step"><div class="number">01</div><h3>Confirm Door Handing</h3><p>Identify the left-hand or right-hand arrangement and confirm the intended swing direction.</p></div>
+   <div class="step"><div class="number">02</div><h3>Select Door Configuration</h3><p>Choose single-leaf, dual active or active/manual model arrangement.</p></div>
+   <div class="step"><div class="number">03</div><h3>Review Glass & Arm Details</h3><p>Check the CH-G glass preparation and arm-mount drawings where relevant.</p></div>
+   <div class="step"><div class="number">04</div><h3>Coordinate Installation</h3><p>Confirm header dimensions, door weight, clear opening and site requirements with Omega.</p></div>
+  </div>
+  <p class="note">
+   The CH-L and CH-R drawings reference a 38-inch clear opening for ADA requirements. Verify applicable accessibility requirements and final clear opening with the project team and local authority.
+  </p>
+ </div>
+</section>
+
+<!-- DRAWINGS -->
+<section class="section">
+ <div class="wrap">
+  <div class="center">
+   <div class="eyebrow">Product Documentation</div>
+   <h2 class="heading">Centre Hung Technical <em>Drawings & Details</em></h2>
+   <p class="copy">
+    Download the model-specific drawings and preparation details for the OA100-BL Centre Hung Series. These documents help coordinate handing, dual-door arrangements, glass preparation and arm mounting.
+   </p>
+  </div>
+  <div class="drawing-grid">
+   <div class="drawing"><div class="drawing-mark">⌁</div><h3>Centre Hung — Left Hand</h3><p>CH-L.pdf · Single-leaf shop drawing</p><a href="https://omegaautomatics.com/images/pdf/CH-L.pdf" target="_blank" rel="noopener">Download PDF ↓</a></div>
+   <div class="drawing"><div class="drawing-mark">⌁</div><h3>Centre Hung — Right Hand</h3><p>CH-R.pdf · Single-leaf shop drawing</p><a href="https://omegaautomatics.com/images/pdf/CH-R.pdf" target="_blank" rel="noopener">Download PDF ↓</a></div>
+   <div class="drawing"><div class="drawing-mark">⌁</div><h3>Centre Hung — Glass Preparation</h3><p>CH-G.pdf · Glass preparation detail</p><a href="https://omegaautomatics.com/images/pdf/Bottom-Load-Center-Hung-CH-G.pdf" target="_blank" rel="noopener">Download PDF ↓</a></div>
+   <div class="drawing"><div class="drawing-mark">⌁</div><h3>Dual Centre Hung — Active / Active</h3><p>Dual CH-AA.pdf</p><a href="https://omegaautomatics.com/images/pdf/DUAL-CH-AA.pdf" target="_blank" rel="noopener">Download PDF ↓</a></div>
+   <div class="drawing"><div class="drawing-mark">⌁</div><h3>Dual Centre Hung — Active / Monitor</h3><p>Dual CH-AM.pdf</p><a href="https://omegaautomatics.com/images/pdf/DUAL-CH-AM.pdf" target="_blank" rel="noopener">Download PDF ↓</a></div>
+   <div class="drawing"><div class="drawing-mark">⌁</div><h3>Dual Centre Hung — Monitor / Active</h3><p>Dual CH-MA.pdf</p><a href="https://omegaautomatics.com/images/pdf/DUAL-CH-MA.pdf" target="_blank" rel="noopener">Download PDF ↓</a></div>
+   <div class="drawing"><div class="drawing-mark">⌁</div><h3>Centre Hung Arm Mount Detail</h3><p>ARM-MOUNT.pdf · Arm mounting detail</p><a href="https://omegaautomatics.com/images/pdf/ARM-MOUNT.pdf" target="_blank" rel="noopener">Download PDF ↓</a></div>
+   <div class="drawing"><div class="drawing-mark">PDF</div><h3>OA100 Technical Features</h3><p>Technical features & functional descriptions</p><a href="https://omegaautomatics.com/images/pdf/OA-100-Technical-Features-and-Functional-Descriptions.pdf" target="_blank" rel="noopener">Download PDF ↓</a></div>
+  </div>
+ </div>
+</section>
+
+<!-- RELATED PRODUCTS -->
+<section class="section light">
+ <div class="wrap">
+  <div class="eyebrow">Explore Omega Product Range</div>
+  <h2 class="heading">Explore Related <em>Automatic Entrance Systems</em></h2>
+  <p class="copy">
+   Compare the Centre Hung Series with other Omega automatic door solutions to identify the arrangement that best suits your entrance design and operating requirements.
+  </p>
+  <div class="related">
+   <a href="https://omegaautomatics.com/surface-mount-push-operators">Surface Mount Push Operators →</a>
+   <a href="https://omegaautomatics.com/surface-mount-pull-operators">Surface Mount Pull Operators →</a>
+   <a href="https://omegaautomatics.com/bottom-load-centre-spindle-operators">Bottom Load Centre Spindle Operators →</a>
+   <a href="https://omegaautomatics.com/full-breakout-sliding-door-systems">Full Breakout Sliding Door Systems →</a>
+   <a href="https://omegaautomatics.com/fixed-sidelight-sliding-door-systems">Fixed Sidelight Sliding Door Systems →</a>
+   <a href="https://omegaautomatics.com/accessories">Automatic Door Accessories & OEM Parts →</a>
+   <a href="https://omegaautomatics.com/universal-washroom-kits">Universal Washroom Kits →</a>
+  </div>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+ <div class="wrap">
+  <div class="eyebrow">Frequently Asked Questions</div>
+  <div class="faq-layout">
+   <div class="faq-intro">
+    <h2 class="heading">Bottom Load Center Hung Operators <em>FAQs</em></h2>
+    <p class="copy">
+     Find answers to common questions about Omega's OA100-BL Centre Hung Operators, including concealed mounting, model configurations, technical specifications, glass preparation and installation planning.
+    </p>
+    <p class="copy">
+     Need help selecting a CH Series model for your project? Contact Omega to discuss your door arrangement and technical requirements.
+    </p>
+    <a class="btn" href="https://omegaautomatics.com/contact">Contact Omega</a>
+   </div>
+
+   <div class="faq-list">
+    <div class="faq-item"><details><summary>What is a bottom load centre hung operator?</summary><p>A bottom load centre hung operator is a concealed automatic swing door operator installed within the door header. The OA100-BL uses a centre-hung arm and bottom pivot arrangement, with the operator spindle acting as the door's top pivot point.</p></details></div>
+
+    <div class="faq-item"><details><summary>What is the difference between centre hung and centre spindle operators?</summary><p>The Centre Hung Series uses a centre-hung arm and bottom pivot, with the operator spindle acting as the top pivot point. The Centre Spindle Series uses a different spindle-drive arrangement. They are separate Omega product configurations and should be selected according to the door design and preparation requirements.</p></details></div>
+
+    <div class="faq-item"><details><summary>What are the benefits of a concealed centre hung operator?</summary><p>The operator is concealed within the door header, avoiding a visible surface-mounted operator box. This arrangement can be useful where overhead clearance is restricted or a clean, uninterrupted transom line is an architectural priority.</p></details></div>
+
+    <div class="faq-item"><details><summary>Which models are available in the CH Series?</summary><p>The OA100-BL Centre Hung Series includes CH-L, CH-R, CH-AA, CH-AM and CH-MA configurations.</p></details></div>
+
+    <div class="faq-item"><details><summary>What is the difference between CH-L and CH-R?</summary><p>CH-L is the single-leaf left-hand configuration, while CH-R is the single-leaf right-hand configuration. Review the corresponding shop drawing to confirm the required handing for your door.</p></details></div>
+
+    <div class="faq-item"><details><summary>What is the CH-AA configuration?</summary><p>CH-AA is the dual Active/Active configuration. Its technical drawing shows two OA100 operators in a dual centre hung arrangement.</p></details></div>
+
+    <div class="faq-item"><details><summary>What are CH-AM and CH-MA configurations?</summary><p>CH-AM is the Active/Monitor arrangement, while CH-MA is Monitor/Active. The published drawings show an OA100 operator paired with a DORMA RTS 88 manual closer for these configurations. Confirm the required arrangement with Omega for your project.</p></details></div>
+
+    <div class="faq-item"><details><summary>Can the Centre Hung Series be used for all-glass entrances?</summary><p>Omega provides a dedicated CH-G centre-hung glass preparation drawing and an arm-mount detail. These documents are relevant when coordinating glass and arm preparation for suitable entrance designs. Confirm the door construction and compatibility with Omega.</p></details></div>
+
+    <div class="faq-item"><details><summary>What is the maximum door weight capacity?</summary><p>The published OA100-BL specification lists a door capacity of up to 450 lbs. Confirm the suitability of the selected configuration against the actual door and installation conditions.</p></details></div>
+
+    <div class="faq-item"><details><summary>What are the header dimensions?</summary><p>The published header dimensions are 4½ inches wide by 4½ inches high. The standard header width is 39 inches for a 36-inch door. Custom widths may be available on request; confirm the final dimensions with Omega.</p></details></div>
+
+    <div class="faq-item"><details><summary>What is the maximum opening angle?</summary><p>The OA100-BL Centre Hung product brochure lists an opening angle of up to 120 degrees. The actual usable opening angle depends on the door, installation and project conditions.</p></details></div>
+
+    <div class="faq-item"><details><summary>What power supply does the operator require?</summary><p>The published power supply requirement is 120VAC, 60Hz. The operator also includes an on-board 24VDC, 1.2A power supply for common locks and accessories.</p></details></div>
+
+    <div class="faq-item"><details><summary>Does the operator support electric locks?</summary><p>Yes. The OA100 documentation lists an electric lock input with selectable Fail-Safe and Fail-Secure settings. It also describes an adjustable electric lock delay. Confirm wiring and compatibility for the selected lock.</p></details></div>
+
+    <div class="faq-item"><details><summary>Does the OA100 include obstacle detection?</summary><p>Yes. The technical feature documentation describes built-in obstacle detection in the opening direction. When the door encounters an obstruction, it stops and allows closing under standard spring power.</p></details></div>
+
+    <div class="faq-item"><details><summary>Are power close and encoder positioning standard features?</summary><p>The technical documentation identifies Power Close and encoder door positioning as XP-version features. Confirm the required version and available functions with Omega before specifying the operator.</p></details></div>
+
+    <div class="faq-item"><details><summary>What finish options are available?</summary><p>The product page highlights Anodized Clear and Anodized Black. The technical drawings also reference clear anodize, dark bronze, light bronze and custom finishes. Contact Omega to confirm the available finish for your selected model.</p></details></div>
+
+    <div class="faq-item"><details><summary>Where can I download Centre Hung technical drawings?</summary><p>Omega provides individual drawings for CH-L, CH-R, CH-AA, CH-AM and CH-MA, along with a CH-G glass preparation detail and a separate arm-mount drawing. The PDF links are available in the Technical Drawings section above.</p></details></div>
+
+    <div class="faq-item"><details><summary>What clear opening is referenced in the CH drawings?</summary><p>The CH-L and CH-R technical drawings reference a 38-inch clear opening to meet ADA requirements. Confirm the applicable accessibility requirements and final clear opening with your project team and local authority.</p></details></div>
+
+    <div class="faq-item"><details><summary>What is the warranty on the OA100-BL operator?</summary><p>The published product specification lists a one-year parts warranty from the date of invoice. Refer to Omega for the applicable warranty terms and conditions.</p></details></div>
+
+    <div class="faq-item"><details><summary>How can I request a quote for a Centre Hung operator?</summary><p>Contact Omega through the <a href="https://omegaautomatics.com/contact">Contact page</a> or call 905-670-8008 to discuss the door arrangement, model selection and project requirements.</p></details></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta">
+ <div class="wrap cta-inner">
+  <div>
+   <div class="eyebrow">Talk to Omega Automatics</div>
+   <h2>Planning a Concealed Centre Hung Entrance?</h2>
+   <p>
+    Discuss your door handing, dual-door arrangement, header dimensions, glass preparation and installation requirements with Omega. Request product information and review the relevant technical drawings before specifying your OA100-BL Centre Hung Operator.
+   </p>
+  </div>
+  <div class="cta-actions">
+   <a class="btn" href="https://omegaautomatics.com/contact">Request a Quote</a>
+   <a class="btn outline" href="tel:9056708008">Call 905-670-8008</a>
+  </div>
+ </div>
+</section>
+
+</div>
