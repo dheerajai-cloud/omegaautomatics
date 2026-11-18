@@ -1,0 +1,1064 @@
+
+<div id="omega-full-breakout">
+
+<style>
+#omega-full-breakout{
+ --fb-red:#e3231b;
+ --fb-gold:#c5a064;
+ --fb-dark:#101216;
+ --fb-text:#292929;
+ --fb-muted:#77736d;
+ --fb-light:#f8f7f4;
+ --fb-border:#e9e5de;
+ font-family:Georgia,"Times New Roman",serif;
+ color:var(--fb-text);
+ background:#fff;
+ width:100%;
+ overflow:hidden;
+}
+#omega-full-breakout *{box-sizing:border-box}
+#omega-full-breakout img{max-width:100%;height:auto;display:block}
+#omega-full-breakout a{text-decoration:none}
+#omega-full-breakout .fb-wrap{width:min(1120px,90%);margin:auto}
+#omega-full-breakout .fb-section{padding:76px 0}
+#omega-full-breakout .fb-light{background:var(--fb-light)}
+#omega-full-breakout .fb-dark{background:var(--fb-dark);color:#fff}
+#omega-full-breakout .fb-eyebrow{
+ color:var(--fb-gold);font-size:11px;font-weight:bold;
+ letter-spacing:2px;text-transform:uppercase;
+}
+#omega-full-breakout .fb-title{
+ font-size:35px;line-height:1.2;font-weight:normal;
+ margin:12px 0 17px;color:#202020;
+}
+#omega-full-breakout .fb-title em{
+ color:var(--fb-gold);font-weight:normal;
+}
+#omega-full-breakout .fb-dark .fb-title{color:#fff}
+#omega-full-breakout .fb-copy{
+ color:#6d6963;font-size:14px;line-height:1.9;
+}
+#omega-full-breakout .fb-dark .fb-copy{color:#c7c4be}
+#omega-full-breakout .fb-center{text-align:center}
+#omega-full-breakout .fb-center .fb-copy{
+ max-width:780px;margin-left:auto;margin-right:auto;
+}
+#omega-full-breakout .fb-btn{
+ display:inline-flex;align-items:center;justify-content:center;
+ background:var(--fb-red);color:#fff!important;
+ padding:13px 20px;border:1px solid var(--fb-red);
+ font-size:11px;font-weight:bold;letter-spacing:.5px;
+ text-transform:uppercase;transition:.25s;
+}
+#omega-full-breakout .fb-btn:hover{
+ background:#b91d17;border-color:#b91d17;
+}
+#omega-full-breakout .fb-btn-outline{
+ background:transparent;border-color:rgba(255,255,255,.45);
+ color:#fff!important;
+}
+#omega-full-breakout .fb-btn-outline:hover{
+ background:var(--fb-red);border-color:var(--fb-red);
+}
+#omega-full-breakout .fb-rule{
+ height:1px;background:var(--fb-border);
+ margin:22px 0 28px;position:relative;
+}
+#omega-full-breakout .fb-rule:before{
+ content:"";position:absolute;left:0;top:-1px;
+ width:55px;height:2px;background:var(--fb-gold);
+}
+
+/* HERO */
+#omega-full-breakout .fb-hero{
+ background:linear-gradient(90deg,rgba(8,10,13,.97),rgba(8,10,13,.90));
+ padding:76px 0;color:#fff;
+}
+#omega-full-breakout .fb-hero-grid{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:48px;align-items:center;
+}
+#omega-full-breakout .fb-hero h1{
+ color:#fff;font-size:49px;line-height:1.08;
+ font-weight:normal;margin:13px 0 22px;
+}
+#omega-full-breakout .fb-hero h1 em{
+ color:var(--fb-gold);font-weight:normal;
+}
+#omega-full-breakout .fb-hero-text{
+ color:#d1cec8;font-size:14px;line-height:1.9;
+ margin-bottom:24px;
+}
+#omega-full-breakout .fb-hero-buttons{
+ display:flex;gap:11px;flex-wrap:wrap;margin-top:26px;
+}
+#omega-full-breakout .fb-hero-visual{
+ background:#fff;padding:14px;
+}
+#omega-full-breakout .fb-hero-visual img{
+ width:100%;height:300px;object-fit:contain;
+}
+#omega-full-breakout .fb-hero-caption{
+ border-top:1px solid #eee;padding:12px 5px 2px;
+ display:flex;justify-content:space-between;gap:12px;
+ color:#333;font-size:11px;
+}
+#omega-full-breakout .fb-hero-caption span:last-child{color:#a27d45}
+#omega-full-breakout .fb-trust-row{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:14px;margin-top:30px;
+}
+#omega-full-breakout .fb-trust{
+ border-top:1px solid var(--fb-gold);padding-top:12px;
+}
+#omega-full-breakout .fb-trust strong{
+ display:block;color:var(--fb-gold);font-size:11px;margin-bottom:6px;
+}
+#omega-full-breakout .fb-trust span{
+ display:block;color:#d0cdc7;font-size:11px;line-height:1.6;
+}
+
+/* INTRO */
+#omega-full-breakout .fb-two-col{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:48px;align-items:center;
+}
+#omega-full-breakout .fb-image-panel{
+ background:#f4f2ee;padding:22px;
+}
+#omega-full-breakout .fb-image-panel img{
+ width:100%;height:300px;object-fit:contain;
+}
+#omega-full-breakout .fb-list{
+ list-style:none;padding:0;margin:22px 0 0;
+}
+#omega-full-breakout .fb-list li{
+ position:relative;padding:12px 0 12px 24px;
+ border-bottom:1px solid var(--fb-border);
+ color:#5d5954;font-size:13px;line-height:1.7;
+}
+#omega-full-breakout .fb-list li:before{
+ content:"";position:absolute;left:2px;top:19px;
+ height:7px;width:7px;background:var(--fb-gold);
+}
+
+/* BREAKOUT EXPLANATION */
+#omega-full-breakout .fb-breakout-grid{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:45px;align-items:center;
+}
+#omega-full-breakout .fb-breakout-visual{
+ background:#fff;padding:20px;
+}
+#omega-full-breakout .fb-breakout-visual img{
+ width:100%;height:280px;object-fit:contain;
+}
+#omega-full-breakout .fb-step-list{margin-top:25px}
+#omega-full-breakout .fb-step{
+ display:grid;grid-template-columns:45px 1fr;
+ gap:15px;padding:16px 0;border-bottom:1px solid var(--fb-border);
+}
+#omega-full-breakout .fb-step-number{
+ color:var(--fb-gold);font-size:23px;
+}
+#omega-full-breakout .fb-step h3{
+ color:#292929;font-size:15px;margin:0 0 6px;
+}
+#omega-full-breakout .fb-step p{
+ color:#777;font-size:12px;line-height:1.8;margin:0;
+}
+
+/* CONFIGURATIONS */
+#omega-full-breakout .fb-config-grid{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:20px;margin-top:36px;
+}
+#omega-full-breakout .fb-config{
+ background:#fff;border:1px solid var(--fb-border);
+ border-top:3px solid var(--fb-gold);
+ padding:20px;transition:.25s;
+}
+#omega-full-breakout .fb-config:hover{
+ transform:translateY(-4px);
+ box-shadow:0 10px 24px rgba(0,0,0,.07);
+}
+#omega-full-breakout .fb-config img{
+ width:100%;height:155px;object-fit:contain;
+ margin-bottom:15px;
+}
+#omega-full-breakout .fb-config h3{
+ color:#292929;font-size:18px;margin:0 0 8px;
+}
+#omega-full-breakout .fb-code{
+ color:var(--fb-gold);font-size:11px;
+ letter-spacing:1px;font-weight:bold;
+}
+#omega-full-breakout .fb-config p{
+ color:#777;font-size:12px;line-height:1.8;
+ min-height:65px;margin:12px 0 16px;
+}
+#omega-full-breakout .fb-config .fb-btn{padding:11px 15px}
+
+/* COMPARISON TABLE */
+#omega-full-breakout .fb-table{
+ width:100%;border-collapse:collapse;margin-top:30px;font-size:13px;
+}
+#omega-full-breakout .fb-table th{
+ background:#17191d;color:#fff;text-align:left;
+ padding:15px;font-weight:normal;
+}
+#omega-full-breakout .fb-table td{
+ padding:14px 15px;border-bottom:1px solid var(--fb-border);
+ color:#68635d;line-height:1.6;
+}
+#omega-full-breakout .fb-table tr:nth-child(even) td{
+ background:#f8f7f4;
+}
+#omega-full-breakout .fb-table td:first-child{
+ color:#252525;font-weight:bold;
+}
+
+/* APPLICATIONS */
+#omega-full-breakout .fb-app-grid{
+ display:grid;grid-template-columns:repeat(4,1fr);
+ gap:16px;margin-top:34px;
+}
+#omega-full-breakout .fb-app{
+ padding:22px 18px;background:#fff;
+ border-top:2px solid var(--fb-gold);
+}
+#omega-full-breakout .fb-app small{
+ color:var(--fb-gold);font-size:10px;letter-spacing:1px;
+}
+#omega-full-breakout .fb-app h3{
+ color:#292929;font-size:15px;margin:11px 0 8px;
+}
+#omega-full-breakout .fb-app p{
+ color:#777;font-size:12px;line-height:1.8;margin:0;
+}
+
+/* TECHNICAL SPECS */
+#omega-full-breakout .fb-spec-grid{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:42px;margin-top:35px;align-items:start;
+}
+#omega-full-breakout .fb-subtitle{
+ font-size:21px;font-weight:normal;color:#222;margin:0;
+}
+#omega-full-breakout .fb-spec-table{
+ width:100%;border-collapse:collapse;font-size:12px;
+}
+#omega-full-breakout .fb-spec-table td{
+ padding:13px 11px;border-bottom:1px solid #eae6df;
+ line-height:1.6;
+}
+#omega-full-breakout .fb-spec-table tr:nth-child(odd) td{
+ background:#f8f7f4;
+}
+#omega-full-breakout .fb-spec-table td:first-child{
+ width:44%;color:#282828;font-weight:bold;
+}
+#omega-full-breakout .fb-spec-table td:last-child{color:#716d67}
+#omega-full-breakout .fb-note{
+ color:#858078;font-size:11px;line-height:1.8;margin-top:20px;
+}
+
+/* FEATURES */
+#omega-full-breakout .fb-feature-grid{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ margin-top:35px;border-top:1px solid rgba(197,160,100,.45);
+}
+#omega-full-breakout .fb-feature{
+ padding:22px 20px;
+ border-right:1px solid rgba(255,255,255,.12);
+ border-bottom:1px solid rgba(255,255,255,.12);
+}
+#omega-full-breakout .fb-feature:nth-child(3n){border-right:0}
+#omega-full-breakout .fb-feature small{
+ color:var(--fb-gold);font-size:10px;letter-spacing:1px;
+}
+#omega-full-breakout .fb-feature h3{
+ color:#fff;font-size:16px;font-weight:normal;margin:11px 0 8px;
+}
+#omega-full-breakout .fb-feature p{
+ color:#c1beb8;font-size:12px;line-height:1.8;margin:0;
+}
+
+/* FINISHES */
+#omega-full-breakout .fb-finish-grid{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:22px;margin-top:30px;
+}
+#omega-full-breakout .fb-finish{
+ padding:27px;background:#f7f6f3;
+ border-left:3px solid var(--fb-gold);
+}
+#omega-full-breakout .fb-finish small{
+ color:var(--fb-gold);font-size:10px;letter-spacing:1px;
+}
+#omega-full-breakout .fb-finish h3{
+ color:#222;font-size:20px;margin:10px 0;
+}
+#omega-full-breakout .fb-finish p{
+ color:#6d6963;font-size:13px;line-height:1.8;margin:0;
+}
+
+/* DRAWINGS */
+#omega-full-breakout .fb-drawing-grid{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:18px;margin-top:35px;
+}
+#omega-full-breakout .fb-drawing{
+ padding:22px;background:#fff;
+ border:1px solid var(--fb-border);
+ box-shadow:0 5px 18px rgba(0,0,0,.035);
+}
+#omega-full-breakout .fb-drawing-mark{
+ color:var(--fb-gold);font-size:22px;margin-bottom:12px;
+}
+#omega-full-breakout .fb-drawing h3{
+ color:#292929;font-size:15px;margin:0 0 8px;
+}
+#omega-full-breakout .fb-drawing p{
+ color:#777;font-size:11px;margin:0 0 15px;
+}
+#omega-full-breakout .fb-drawing a{
+ display:block;background:#f5f3ef;border:1px solid #e9e5de;
+ padding:11px;text-align:center;color:#3c3935;font-size:11px;
+}
+#omega-full-breakout .fb-drawing a:hover{
+ background:var(--fb-red);color:#fff;border-color:var(--fb-red);
+}
+
+/* FAQ - SAME TWO COLUMN STRUCTURE */
+#omega-full-breakout .fb-faq-layout{
+ display:grid;grid-template-columns:.78fr 1.22fr;
+ gap:48px;align-items:start;margin-top:35px;
+}
+#omega-full-breakout .fb-faq-intro{
+ position:sticky;top:25px;
+}
+#omega-full-breakout .fb-faq-intro .fb-title{font-size:32px}
+#omega-full-breakout .fb-faq-intro .fb-copy{margin-bottom:22px}
+#omega-full-breakout .fb-faq-list{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:0 26px;align-items:start;
+}
+#omega-full-breakout .fb-faq-item{
+ border-bottom:1px solid var(--fb-border);margin:0;
+}
+#omega-full-breakout .fb-faq-item details{padding:17px 0}
+#omega-full-breakout .fb-faq-item summary{
+ cursor:pointer;list-style:none;
+ display:flex;align-items:flex-start;
+ justify-content:space-between;gap:13px;
+ color:#292929;font-size:14px;line-height:1.55;
+}
+#omega-full-breakout .fb-faq-item summary::-webkit-details-marker{
+ display:none;
+}
+#omega-full-breakout .fb-faq-item summary:after{
+ content:"+";
+ display:flex;align-items:center;justify-content:center;
+ flex:0 0 23px;width:23px;height:23px;
+ border:1px solid var(--fb-gold);
+ color:var(--fb-gold);font-size:17px;line-height:1;
+}
+#omega-full-breakout .fb-faq-item details[open] summary:after{
+ content:"−";background:var(--fb-gold);color:#fff;
+}
+#omega-full-breakout .fb-faq-item p{
+ color:#716d67;font-size:12px;line-height:1.85;
+ margin:12px 0 2px;padding-right:24px;
+}
+#omega-full-breakout .fb-faq-item a{
+ color:#b51e18;text-decoration:underline;
+}
+
+/* RELATED LINKS */
+#omega-full-breakout .fb-related{
+ display:flex;flex-wrap:wrap;gap:13px 24px;margin-top:25px;
+}
+#omega-full-breakout .fb-related a{
+ color:#a27d45;font-size:12px;
+ border-bottom:1px solid #d9c8a9;padding-bottom:4px;
+}
+#omega-full-breakout .fb-related a:hover{color:var(--fb-red)}
+
+/* CTA */
+#omega-full-breakout .fb-cta{
+ background:linear-gradient(90deg,rgba(8,10,13,.97),rgba(8,10,13,.89));
+ padding:68px 0;color:#fff;
+}
+#omega-full-breakout .fb-cta-inner{
+ display:flex;align-items:center;justify-content:space-between;gap:35px;
+}
+#omega-full-breakout .fb-cta h2{
+ color:#fff;font-size:33px;line-height:1.25;
+ font-weight:normal;margin:12px 0;
+}
+#omega-full-breakout .fb-cta p{
+ color:#c9c6c0;font-size:13px;line-height:1.8;
+ max-width:670px;margin:0;
+}
+#omega-full-breakout .fb-cta-buttons{
+ display:flex;gap:10px;flex-wrap:wrap;flex-shrink:0;
+}
+
+/* RESPONSIVE */
+@media(max-width:850px){
+ #omega-full-breakout .fb-hero-grid,
+ #omega-full-breakout .fb-two-col,
+ #omega-full-breakout .fb-breakout-grid,
+ #omega-full-breakout .fb-spec-grid{gap:28px}
+ #omega-full-breakout .fb-hero h1{font-size:42px}
+ #omega-full-breakout .fb-config-grid{grid-template-columns:repeat(2,1fr)}
+ #omega-full-breakout .fb-app-grid{grid-template-columns:repeat(2,1fr)}
+ #omega-full-breakout .fb-feature-grid{grid-template-columns:repeat(2,1fr)}
+ #omega-full-breakout .fb-feature:nth-child(3n){border-right:1px solid rgba(255,255,255,.12)}
+ #omega-full-breakout .fb-feature:nth-child(2n){border-right:0}
+ #omega-full-breakout .fb-faq-layout{grid-template-columns:1fr;gap:20px}
+ #omega-full-breakout .fb-faq-intro{position:static}
+ #omega-full-breakout .fb-cta-inner{
+  align-items:flex-start;flex-direction:column;
+ }
+}
+@media(max-width:600px){
+ #omega-full-breakout .fb-wrap{width:90%}
+ #omega-full-breakout .fb-section{padding:55px 0}
+ #omega-full-breakout .fb-title{font-size:29px}
+ #omega-full-breakout .fb-hero{padding:58px 0}
+ #omega-full-breakout .fb-hero-grid,
+ #omega-full-breakout .fb-two-col,
+ #omega-full-breakout .fb-breakout-grid,
+ #omega-full-breakout .fb-spec-grid{grid-template-columns:1fr}
+ #omega-full-breakout .fb-hero h1{font-size:38px}
+ #omega-full-breakout .fb-hero-visual img{height:220px}
+ #omega-full-breakout .fb-trust-row{gap:9px}
+ #omega-full-breakout .fb-trust span{font-size:10px}
+ #omega-full-breakout .fb-config-grid,
+ #omega-full-breakout .fb-finish-grid,
+ #omega-full-breakout .fb-drawing-grid{grid-template-columns:1fr}
+ #omega-full-breakout .fb-app-grid{grid-template-columns:1fr 1fr}
+ #omega-full-breakout .fb-feature-grid{grid-template-columns:1fr}
+ #omega-full-breakout .fb-feature,
+ #omega-full-breakout .fb-feature:nth-child(3n){border-right:0}
+ #omega-full-breakout .fb-faq-list{grid-template-columns:1fr}
+ #omega-full-breakout .fb-faq-intro .fb-title{font-size:28px}
+ #omega-full-breakout .fb-table{font-size:11px}
+ #omega-full-breakout .fb-table th,
+ #omega-full-breakout .fb-table td{padding:11px 8px}
+ #omega-full-breakout .fb-spec-table{font-size:11px}
+ #omega-full-breakout .fb-cta h2{font-size:28px}
+ #omega-full-breakout .fb-cta-buttons{width:100%}
+ #omega-full-breakout .fb-cta-buttons .fb-btn{width:100%}
+}
+</style>
+
+<!-- HERO -->
+<section class="fb-hero">
+ <div class="fb-wrap fb-hero-grid">
+  <div>
+   <div class="fb-eyebrow">Section Three — Automatic Sliding Door Systems</div>
+   <h1>Full Breakout <em>Sliding Door Systems</em></h1>
+   <p class="fb-hero-text">
+    The Omega OA300-SL Full Breakout Sliding Door System combines automatic sliding operation with an emergency breakout function. Designed for commercial and institutional entrances, the system allows its door panels to swing outward manually when required, creating an expanded emergency exit opening beyond the normal sliding passage.
+   </p>
+   <p class="fb-hero-text">
+    Available in Left Hand, Right Hand and Bi-Part configurations, the OA300-SL is engineered for entrances where everyday access, architectural integration and emergency egress planning are important considerations.
+   </p>
+
+   <div class="fb-trust-row">
+    <div class="fb-trust">
+     <strong>OA300-SL SERIES</strong>
+     <span>Automatic Sliding System</span>
+    </div>
+    <div class="fb-trust">
+     <strong>400 LBS / PANEL</strong>
+     <span>Published maximum panel capacity</span>
+    </div>
+    <div class="fb-trust">
+     <strong>FULL BREAKOUT</strong>
+     <span>Emergency panel release</span>
+    </div>
+   </div>
+
+   <div class="fb-hero-buttons">
+    <a class="fb-btn" href="https://www.omegaautomatics.com/images/pdf/OMEGA-Automatics-Sliding-Door-Specification-V1.03.pdf" target="_blank" rel="noopener">Download Specifications</a>
+    <a class="fb-btn fb-btn-outline" href="https://www.omegaautomatics.com/OA300%20-%20SL%20-%20FULL%20BREAKOUT.HTML" target="_blank" rel="noopener">View Product Brochure</a>
+   </div>
+  </div>
+
+  <div class="fb-hero-visual">
+   <img src="https://www.omegaautomatics.com/images/config-sliding-bipart.svg?v=11.0.0" alt="Omega OA300 full breakout bi-part automatic sliding door configuration">
+   <div class="fb-hero-caption">
+    <span>OA300-SL · Full Breakout Bi-Part</span>
+    <span>Emergency Egress Design</span>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section class="fb-section">
+ <div class="fb-wrap fb-two-col">
+  <div>
+   <div class="fb-eyebrow">OA300-SL — Commercial Sliding Systems</div>
+   <h2 class="fb-title">Automatic Sliding Convenience with <em>Emergency Breakout Capability</em></h2>
+   <p class="fb-copy">
+    Omega's OA300-SL Full Breakout Sliding Door System is a complete aluminum-frame automatic entrance solution. During normal operation, the active door panels slide automatically to provide convenient pedestrian access. When an emergency breakout is required, the panels can swing outward as hinged doors to create a wider escape opening.
+   </p>
+   <p class="fb-copy">
+    This combination makes the system suitable for projects where standard automatic sliding access needs to be considered alongside emergency egress requirements. Its available single-slide and bi-part configurations allow project teams to select an arrangement that suits the entrance layout.
+   </p>
+   <ul class="fb-list">
+    <li>Complete aluminum-frame automatic sliding door system</li>
+    <li>Emergency breakout function for the door panels</li>
+    <li>Left Hand, Right Hand and Bi-Part configurations</li>
+    <li>Brushless DC motor with enclosed hypoid gear drive</li>
+    <li>Adjustable opening and closing operation</li>
+    <li>Anodized Clear and Anodized Black finish options</li>
+   </ul>
+  </div>
+  <div class="fb-image-panel">
+   <img src="https://www.omegaautomatics.com/images/config-sliding-lh.svg?v=3.4.0" alt="Omega full breakout sliding door system left hand configuration">
+  </div>
+ </div>
+</section>
+
+<!-- BREAKOUT FUNCTION -->
+<section class="fb-section fb-light">
+ <div class="fb-wrap fb-breakout-grid">
+  <div class="fb-breakout-visual">
+   <img src="https://www.omegaautomatics.com/images/config-sliding-bipart.svg?v=11.0.0" alt="Full breakout bi-part sliding door emergency swing-out configuration">
+  </div>
+  <div>
+   <div class="fb-eyebrow">Emergency Breakout Function</div>
+   <h2 class="fb-title">Designed to Provide a Wider <em>Emergency Exit Opening</em></h2>
+   <p class="fb-copy">
+    The defining feature of a full breakout sliding door system is the ability of its panels to swing outward from their normal sliding position. This allows the entrance to provide an expanded opening for emergency egress rather than relying only on the standard sliding travel.
+   </p>
+   <p class="fb-copy">
+    Omega's published product information describes the breakout system as manually operable without power, with an automatic reset function to return the panels to their normal operating arrangement after breakout.
+   </p>
+
+   <div class="fb-step-list">
+    <div class="fb-step">
+     <div class="fb-step-number">01</div>
+     <div>
+      <h3>Normal Automatic Operation</h3>
+      <p>Door panels slide automatically during everyday entrance use.</p>
+     </div>
+    </div>
+    <div class="fb-step">
+     <div class="fb-step-number">02</div>
+     <div>
+      <h3>Emergency Breakout</h3>
+      <p>Panels can swing outward as hinged doors to expand the exit opening.</p>
+     </div>
+    </div>
+    <div class="fb-step">
+     <div class="fb-step-number">03</div>
+     <div>
+      <h3>Manual Operation During Power Failure</h3>
+      <p>The published system information describes manual operation when electrical power is unavailable.</p>
+     </div>
+    </div>
+    <div class="fb-step">
+     <div class="fb-step-number">04</div>
+     <div>
+      <h3>Breakout Auto-Reset</h3>
+      <p>The breakout panels can re-engage into their normal automatic operating arrangement.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- CONFIGURATIONS -->
+<section class="fb-section">
+ <div class="fb-wrap">
+  <div class="fb-center">
+   <div class="fb-eyebrow">OA300-SL Configuration Options</div>
+   <h2 class="fb-title">Choose the Right <em>Full Breakout Configuration</em></h2>
+   <p class="fb-copy">
+    The OA300-SL series is available in three published configurations. Select the required handing and entrance arrangement based on the building layout, available opening width and project-specific egress requirements.
+   </p>
+  </div>
+
+  <div class="fb-config-grid">
+   <article class="fb-config">
+    <img src="https://www.omegaautomatics.com/images/config-sliding-lh.svg?v=3.4.0" alt="SO-SX left hand full breakout sliding door layout">
+    <h3>Left Hand Full Breakout</h3>
+    <div class="fb-code">SO-SX</div>
+    <p>Single-slide left-hand arrangement. The published configuration places the fixed sidelite on the left and the active panel on the right, travelling left to open.</p>
+    <a class="fb-btn" href="https://www.omegaautomatics.com/images/pdf/so-sx.pdf" target="_blank" rel="noopener">Download Drawing</a>
+   </article>
+
+   <article class="fb-config">
+    <img src="https://www.omegaautomatics.com/images/config-sliding-rh.svg?v=3.4.0" alt="SX-SO right hand full breakout sliding door layout">
+    <h3>Right Hand Full Breakout</h3>
+    <div class="fb-code">SX-SO</div>
+    <p>Single-slide right-hand arrangement, providing the mirrored configuration for entrances requiring the opposite sliding direction.</p>
+    <a class="fb-btn" href="https://www.omegaautomatics.com/images/pdf/sx-so.pdf" target="_blank" rel="noopener">Download Drawing</a>
+   </article>
+
+   <article class="fb-config">
+    <img src="https://www.omegaautomatics.com/images/config-sliding-bipart.svg?v=11.0.0" alt="SO-SX-SX-SO full breakout bi-part sliding door layout">
+    <h3>Bi-Part Full Breakout</h3>
+    <div class="fb-code">SO-SX-SX-SO</div>
+    <p>Bi-part arrangement with two active sliding panels moving in opposite directions, designed for entrances requiring a central opening layout.</p>
+    <a class="fb-btn" href="https://www.omegaautomatics.com/images/pdf/so-sx-sx-so.pdf" target="_blank" rel="noopener">Download Drawing</a>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- CONFIGURATION REFERENCE -->
+<section class="fb-section fb-light">
+ <div class="fb-wrap">
+  <div class="fb-eyebrow">Door Layout Reference</div>
+  <h2 class="fb-title">Full Breakout Configuration <em>Comparison</em></h2>
+  <p class="fb-copy">
+   The configuration codes identify the arrangement of the active sliding panels and sidelites. Review the relevant shop drawing to verify the intended layout and handing before specifying the system.
+  </p>
+  <table class="fb-table">
+   <thead>
+    <tr><th>Configuration Code</th><th>Door Arrangement</th><th>Handing</th></tr>
+   </thead>
+   <tbody>
+    <tr><td>SO-SX</td><td>Single Slide</td><td>Left Hand</td></tr>
+    <tr><td>SX-SO</td><td>Single Slide</td><td>Right Hand</td></tr>
+    <tr><td>SO-SX-SX-SO</td><td>Bi-Part — Both Sides</td><td>Bi-Part</td></tr>
+   </tbody>
+  </table>
+ </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="fb-section">
+ <div class="fb-wrap">
+  <div class="fb-center">
+   <div class="fb-eyebrow">Commercial Entrance Applications</div>
+   <h2 class="fb-title">Where Full Breakout Sliding Doors <em>Can Be Considered</em></h2>
+   <p class="fb-copy">
+    Full breakout automatic sliding systems can be evaluated for buildings where convenient daily pedestrian access and a wider emergency exit opening are important design considerations.
+   </p>
+  </div>
+
+  <div class="fb-app-grid">
+   <article class="fb-app">
+    <small>01 — HEALTHCARE</small>
+    <h3>Hospitals & Healthcare Facilities</h3>
+    <p>Automatic entrance access for hospital, clinic and healthcare building projects where entrance circulation and emergency egress planning matter.</p>
+   </article>
+   <article class="fb-app">
+    <small>02 — RETAIL</small>
+    <h3>Retail & Shopping Centres</h3>
+    <p>Commercial storefront and shopping centre entrances with regular pedestrian movement and a requirement for breakout capability.</p>
+   </article>
+   <article class="fb-app">
+    <small>03 — INSTITUTIONAL</small>
+    <h3>Educational & Civic Buildings</h3>
+    <p>Entrance systems for institutional projects where door layout, accessibility and emergency exit planning need to be coordinated.</p>
+   </article>
+   <article class="fb-app">
+    <small>04 — COMMERCIAL</small>
+    <h3>Offices & Mixed-Use Buildings</h3>
+    <p>Automatic sliding entrances for office buildings, commercial lobbies and mixed-use developments.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- TECHNICAL SPECIFICATIONS -->
+<section class="fb-section fb-light">
+ <div class="fb-wrap">
+  <div class="fb-eyebrow">OA300-SL Product Information</div>
+  <h2 class="fb-title">Full Breakout Sliding Door <em>Technical Specifications</em></h2>
+  <p class="fb-copy">
+   The following information is based on Omega's published OA300-SL product specifications. Review the motor, panel capacity, header dimensions, programmable controls and operating conditions when evaluating the system for a project.
+  </p>
+
+  <div class="fb-spec-grid">
+   <div>
+    <h3 class="fb-subtitle">Drive & Performance</h3>
+    <div class="fb-rule"></div>
+    <table class="fb-spec-table">
+     <tr><td>Product Series</td><td>OA300-SL</td></tr>
+     <tr><td>System Type</td><td>Full Breakout Automatic Sliding Door System</td></tr>
+     <tr><td>Motor</td><td>1/5 HP DC Brushless Motor</td></tr>
+     <tr><td>Drive System</td><td>Enclosed Hypoid Gear System</td></tr>
+     <tr><td>Door Capacity</td><td>Up to 400 lbs per panel</td></tr>
+     <tr><td>Opening / Closing Speed</td><td>Adjustable</td></tr>
+     <tr><td>Opening / Closing Force</td><td>Adjustable</td></tr>
+     <tr><td>Opening Time</td><td>9 Programmable Levels</td></tr>
+     <tr><td>Open Torque</td><td>20 Programmable Levels</td></tr>
+     <tr><td>Control Board</td><td>Universal Digital Microprocessor with Display</td></tr>
+     <tr><td>Settings Memory</td><td>Up to 10 Years</td></tr>
+     <tr><td>Braking Stroke</td><td>Automatic Adjustment</td></tr>
+    </table>
+   </div>
+
+   <div>
+    <h3 class="fb-subtitle">Installation & System Details</h3>
+    <div class="fb-rule"></div>
+    <table class="fb-spec-table">
+     <tr><td>Power Supply</td><td>120VAC, 60Hz</td></tr>
+     <tr><td>Header Dimensions</td><td>4½″ × 7″</td></tr>
+     <tr><td>Frame Type</td><td>Aluminum Anodized</td></tr>
+     <tr><td>Frame Compatibility</td><td>Standard Glass House Frame</td></tr>
+     <tr><td>Configurations</td><td>Left Hand, Right Hand, Bi-Part</td></tr>
+     <tr><td>Finish Options</td><td>Anodized Clear / Anodized Black</td></tr>
+     <tr><td>Operating Temperature</td><td>-40°F to 140°F (-40°C to 60°C)</td></tr>
+     <tr><td>Custom Headers</td><td>Available</td></tr>
+     <tr><td>Lead Time</td><td>4 Weeks from Approved Drawing</td></tr>
+     <tr><td>Custom Design Charge</td><td>No Charge</td></tr>
+     <tr><td>Manufacturing Origin</td><td>Vaughan, Ontario, Canada</td></tr>
+     <tr><td>Warranty</td><td>1 Year from Date of Invoice</td></tr>
+    </table>
+   </div>
+  </div>
+  <p class="fb-note">
+   Note: The product page's shared specification section separately lists a temperature range of -30°C to +50°C, while the OA300-SL technical specification section lists -40°C to +60°C. Confirm the applicable operating range for the selected system with Omega before final project specification.
+  </p>
+  <a class="fb-btn" href="https://www.omegaautomatics.com/images/pdf/OMEGA-Automatics-Sliding-Door-Specification-V1.03.pdf" target="_blank" rel="noopener">Download Sliding Door Specification PDF</a>
+ </div>
+</section>
+
+<!-- KEY FEATURES -->
+<section class="fb-section fb-dark">
+ <div class="fb-wrap">
+  <div class="fb-eyebrow">OA300-SL Engineering Features</div>
+  <h2 class="fb-title">Engineered for Reliable <em>Daily Operation</em></h2>
+  <p class="fb-copy">
+   The OA300-SL combines programmable door control, a brushless motor and hypoid gear drive with service-friendly design features. These functions support adjustable operation, panel positioning and maintenance access.
+  </p>
+
+  <div class="fb-feature-grid">
+   <article class="fb-feature">
+    <small>01 — DRIVE TECHNOLOGY</small>
+    <h3>Brushless DC Motor</h3>
+    <p>1/5 HP brushless DC motor paired with an enclosed hypoid gear system.</p>
+   </article>
+   <article class="fb-feature">
+    <small>02 — GEAR SYSTEM</small>
+    <h3>Enclosed Hypoid Gear Drive</h3>
+    <p>Precision drive arrangement designed for dependable automatic sliding operation.</p>
+   </article>
+   <article class="fb-feature">
+    <small>03 — PROGRAMMING</small>
+    <h3>Microprocessor Control</h3>
+    <p>Digital control board with programmable operating settings and display.</p>
+   </article>
+   <article class="fb-feature">
+    <small>04 — SPEED CONTROL</small>
+    <h3>Adjustable Opening & Closing</h3>
+    <p>Opening and closing speeds and forces can be adjusted for the installation.</p>
+   </article>
+   <article class="fb-feature">
+    <small>05 — TORQUE</small>
+    <h3>20 Torque Levels</h3>
+    <p>Programmable open-torque settings for system configuration.</p>
+   </article>
+   <article class="fb-feature">
+    <small>06 — OPENING TIME</small>
+    <h3>9 Opening Levels</h3>
+    <p>Multiple programmable door-opening time settings.</p>
+   </article>
+   <article class="fb-feature">
+    <small>07 — EMERGENCY</small>
+    <h3>Breakout Auto-Reset</h3>
+    <p>Breakout panels can re-engage into their normal operating arrangement.</p>
+   </article>
+   <article class="fb-feature">
+    <small>08 — POWER FAILURE</small>
+    <h3>Manual Sliding Operation</h3>
+    <p>The published product information describes manual door operation when power is unavailable.</p>
+   </article>
+   <article class="fb-feature">
+    <small>09 — SAFETY RESPONSE</small>
+    <h3>High-Speed Reverse Function</h3>
+    <p>Reverse response on obstruction as described in the OA300-SL product features.</p>
+   </article>
+   <article class="fb-feature">
+    <small>10 — SERVICEABILITY</small>
+    <h3>Replaceable Wheel Track</h3>
+    <p>Wheel track replacement can be carried out on site without removing the header.</p>
+   </article>
+   <article class="fb-feature">
+    <small>11 — MAINTENANCE</small>
+    <h3>Hinged Aluminum Cover</h3>
+    <p>Header cover self-locks in the open position for service access.</p>
+   </article>
+   <article class="fb-feature">
+    <small>12 — PANEL POSITION</small>
+    <h3>Adjustable End Stop</h3>
+    <p>Adjustable end-stop supports precise door-panel positioning.</p>
+   </article>
+   <article class="fb-feature">
+    <small>13 — BRAKING</small>
+    <h3>Automatic Braking Adjustment</h3>
+    <p>Automatic braking-stroke adjustment for a smoother, consistent stop.</p>
+   </article>
+   <article class="fb-feature">
+    <small>14 — ACTIVATION</small>
+    <h3>Multiple Activation Options</h3>
+    <p>Accepts activation types including push buttons, remotes and motion sensors.</p>
+   </article>
+   <article class="fb-feature">
+    <small>15 — FRAME FIT</small>
+    <h3>Standard Frame Compatibility</h3>
+    <p>Designed to fit standard glass house frames without a custom rough-in.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- FINISHES -->
+<section class="fb-section">
+ <div class="fb-wrap">
+  <div class="fb-eyebrow">Architectural Finish Options</div>
+  <h2 class="fb-title">Select a Finish to Suit the <em>Entrance Design</em></h2>
+  <p class="fb-copy">
+   Omega offers anodized finish options for the OA300-SL aluminum frame system. The selected finish can be coordinated with the surrounding architectural materials and entrance design.
+  </p>
+  <div class="fb-finish-grid">
+   <div class="fb-finish">
+    <small>FINISH OPTION 01</small>
+    <h3>Anodized Clear Finish</h3>
+    <p>Listed as the standard commercial finish, suitable for projects requiring a clean, conventional aluminum appearance.</p>
+   </div>
+   <div class="fb-finish">
+    <small>FINISH OPTION 02</small>
+    <h3>Anodized Black Finish</h3>
+    <p>Listed for luxury and high-design projects where a darker architectural frame finish is preferred.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- DRAWINGS -->
+<section class="fb-section fb-light">
+ <div class="fb-wrap">
+  <div class="fb-center">
+   <div class="fb-eyebrow">Product Documentation</div>
+   <h2 class="fb-title">Full Breakout Sliding Door <em>Technical Drawings</em></h2>
+   <p class="fb-copy">
+    Access the individual OA300-SL configuration drawings and product specification document. Review the drawings for panel layout, handing, frame dimensions and installation planning.
+   </p>
+  </div>
+
+  <div class="fb-drawing-grid">
+   <div class="fb-drawing">
+    <div class="fb-drawing-mark">PDF</div>
+    <h3>Full Breakout — Left Hand</h3>
+    <p>SO-SX · Single-slide left-hand configuration</p>
+    <a href="https://www.omegaautomatics.com/images/pdf/so-sx.pdf" target="_blank" rel="noopener">Download Technical Drawing ↓</a>
+   </div>
+   <div class="fb-drawing">
+    <div class="fb-drawing-mark">PDF</div>
+    <h3>Full Breakout — Right Hand</h3>
+    <p>SX-SO · Single-slide right-hand configuration</p>
+    <a href="https://www.omegaautomatics.com/images/pdf/sx-so.pdf" target="_blank" rel="noopener">Download Technical Drawing ↓</a>
+   </div>
+   <div class="fb-drawing">
+    <div class="fb-drawing-mark">PDF</div>
+    <h3>Full Breakout — Bi-Part</h3>
+    <p>SO-SX-SX-SO · Dual active-panel configuration</p>
+    <a href="https://www.omegaautomatics.com/images/pdf/so-sx-sx-so.pdf" target="_blank" rel="noopener">Download Technical Drawing ↓</a>
+   </div>
+   <div class="fb-drawing">
+    <div class="fb-drawing-mark">PDF</div>
+    <h3>Sliding Door Technical Specification</h3>
+    <p>Omega Automatics Sliding Door Specification V1.03</p>
+    <a href="https://www.omegaautomatics.com/images/pdf/OMEGA-Automatics-Sliding-Door-Specification-V1.03.pdf" target="_blank" rel="noopener">Download Specification ↓</a>
+   </div>
+   <div class="fb-drawing">
+    <div class="fb-drawing-mark">PDF</div>
+    <h3>OA300-SL Product Brochure</h3>
+    <p>Full Breakout Sliding Door Systems product brochure</p>
+    <a href="https://www.omegaautomatics.com/OA300%20-%20SL%20-%20FULL%20BREAKOUT.HTML" target="_blank" rel="noopener">View Product Brochure ↓</a>
+   </div>
+   <div class="fb-drawing">
+    <div class="fb-drawing-mark">PDF</div>
+    <h3>Omega Product Downloads</h3>
+    <p>Product drawings and specification resources</p>
+    <a href="https://www.omegaautomatics.com/downloads-2" target="_blank" rel="noopener">Explore Downloads ↓</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- RELATED SYSTEMS -->
+<section class="fb-section">
+ <div class="fb-wrap">
+  <div class="fb-eyebrow">Explore Omega Automatic Entrance Systems</div>
+  <h2 class="fb-title">Compare Related <em>Sliding Door Solutions</em></h2>
+  <p class="fb-copy">
+   Omega's OA300-SL platform also includes fixed sidelight sliding door systems. Compare the entrance layouts to identify whether a full breakout or fixed sidelight configuration is more appropriate for your project.
+  </p>
+  <div class="fb-related">
+   <a href="https://omegaautomatics.com/fixed-sidelight-sliding-door-systems">Fixed Sidelight Sliding Door Systems →</a>
+   <a href="https://omegaautomatics.com/surface-mount-push-operators">Surface Mount Push Operators →</a>
+   <a href="https://omegaautomatics.com/surface-mount-pull-operators">Surface Mount Pull Operators →</a>
+   <a href="https://omegaautomatics.com/bottom-load-centre-spindle-operators">Bottom Load Centre Spindle Operators →</a>
+   <a href="https://omegaautomatics.com/bottom-load-operators">Bottom Load Center Hung Operators →</a>
+   <a href="https://omegaautomatics.com/accessories">Automatic Door Parts & Accessories →</a>
+   <a href="https://omegaautomatics.com/services">All Automatic Door Systems →</a>
+  </div>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section class="fb-section fb-light">
+ <div class="fb-wrap">
+  <div class="fb-eyebrow">Frequently Asked Questions</div>
+  <div class="fb-faq-layout">
+   <div class="fb-faq-intro">
+    <h2 class="fb-title">Full Breakout Sliding Door <em>FAQs</em></h2>
+    <p class="fb-copy">
+     Learn more about the OA300-SL Full Breakout Sliding Door System, including emergency breakout operation, available configurations, panel capacity, technical specifications and product drawings.
+    </p>
+    <p class="fb-copy">
+     Need help choosing between Left Hand, Right Hand or Bi-Part? Contact Omega to discuss your entrance layout and project requirements.
+    </p>
+    <a class="fb-btn" href="https://omegaautomatics.com/contact">Contact Omega</a>
+   </div>
+
+   <div class="fb-faq-list">
+
+    <div class="fb-faq-item"><details>
+     <summary>What is a full breakout sliding door system?</summary>
+     <p>A full breakout sliding door system operates as an automatic sliding entrance during normal use. Its panels can also swing outward as hinged doors when emergency breakout is required, creating a wider exit opening than the standard sliding passage.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>What is the Omega OA300-SL Full Breakout System?</summary>
+     <p>The OA300-SL is Omega Automatics' automatic sliding door system with a full emergency breakout function. It uses an aluminum frame, brushless DC motor and enclosed hypoid gear drive, with single-slide and bi-part configurations.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>How does the emergency breakout function work?</summary>
+     <p>The door panels can swing outward from their normal sliding arrangement, allowing the entrance to provide an expanded emergency exit opening. The product information also describes manual operation without electrical power.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>Which full breakout configurations are available?</summary>
+     <p>Omega lists three configurations: SO-SX for Left Hand, SX-SO for Right Hand and SO-SX-SX-SO for Bi-Part installations.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>What is the difference between SO-SX and SX-SO?</summary>
+     <p>SO-SX is the published Left Hand configuration, while SX-SO is the Right Hand configuration. They are opposite single-slide arrangements. Refer to the individual shop drawings to verify the correct layout for your project.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>What is a bi-part full breakout sliding door?</summary>
+     <p>A bi-part arrangement uses two active sliding panels that move in opposite directions to open from the centre. Omega's published configuration code is SO-SX-SX-SO.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>Can the panels be opened manually during a power failure?</summary>
+     <p>Yes. Omega's published product information describes easy manual sliding operation in the event of power failure. The emergency breakout function also provides a separate outward swing-out arrangement.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>Does the breakout system reset automatically?</summary>
+     <p>Omega lists an emergency breakout auto-reset feature. The panels can re-engage into their normal automatic operating arrangement after breakout.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>What is the maximum door panel weight capacity?</summary>
+     <p>The OA300-SL product specifications list a maximum door weight of up to 400 lbs per panel. Confirm the suitability of the selected configuration against the actual panel and project conditions.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>What motor is used in the OA300-SL system?</summary>
+     <p>The published technical specifications list a 1/5 HP DC brushless motor with an enclosed hypoid gear system.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>What are the standard header dimensions?</summary>
+     <p>The published OA300-SL header size is 4½ inches by 7 inches. Custom header options are also listed. Confirm the required dimensions with Omega for the selected configuration.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>What power supply does the OA300-SL require?</summary>
+     <p>The product specifications list a power supply of 120VAC, 60Hz. Electrical service and site requirements should be confirmed during project coordination.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>Are opening and closing speeds adjustable?</summary>
+     <p>Yes. Omega lists adjustable opening and closing speeds and forces. The system also provides nine programmable opening-time levels and twenty open-torque levels.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>Which activation devices can be used?</summary>
+     <p>The product page lists support for activation types including push buttons, remote controls and motion sensors. Confirm the specific device and interface requirements for the installation.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>What finish options are available?</summary>
+     <p>The OA300-SL is listed with Anodized Clear and Anodized Black finish options. Contact Omega to confirm the finish selection for your project.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>What temperature range does the system support?</summary>
+     <p>The OA300-SL technical specification section lists -40°F to 140°F (-40°C to 60°C). The general shared specification section on the product page gives a different range, so confirm the applicable operating range with Omega before specifying the system.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>Is the full breakout sliding system suitable for healthcare entrances?</summary>
+     <p>Healthcare facilities are among the applications identified in Omega's product brochure. The final system selection should consider the entrance design, traffic, door configuration, safety requirements and applicable building codes.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>Does the OA300-SL meet ANSI A156.10 requirements?</summary>
+     <p>Omega's product page states that the system meets ANSI A156.10 guidelines for rapid-opening commercial applications. Always confirm the applicable certification, listing and code requirements for the specific project with Omega and the authority having jurisdiction.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>Can the wheel track be replaced without removing the header?</summary>
+     <p>Yes. Omega lists on-site wheel track replacement as a serviceability feature, allowing track replacement without removing the header.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>Where can I download the technical drawings?</summary>
+     <p>Individual PDF drawings for SO-SX, SX-SO and SO-SX-SX-SO are available in the Technical Drawings section above. The section also links to the sliding door specification document.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>How long is the stated lead time?</summary>
+     <p>The OA300-SL product specifications list a lead time of four weeks from approved drawing. Confirm the current production schedule with Omega before planning your project timeline.</p>
+    </details></div>
+
+    <div class="fb-faq-item"><details>
+     <summary>How can I request a quote for a full breakout sliding door?</summary>
+     <p>Contact Omega through the <a href="https://omegaautomatics.com/contact">Contact page</a> or call 905-670-8008. Share your required configuration, opening dimensions and project details to discuss the appropriate system.</p>
+    </details></div>
+
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="fb-cta">
+ <div class="fb-wrap fb-cta-inner">
+  <div>
+   <div class="fb-eyebrow">Talk to Omega Automatics</div>
+   <h2>Planning a Full Breakout Sliding Door Installation?</h2>
+   <p>
+    Discuss your entrance layout, panel configuration, opening dimensions and emergency egress requirements with Omega. Request product information and technical drawings to help coordinate your OA300-SL project.
+   </p>
+  </div>
+  <div class="fb-cta-buttons">
+   <a class="fb-btn" href="https://omegaautomatics.com/contact">Request a Quote</a>
+   <a class="fb-btn fb-btn-outline" href="tel:9056708008">Call 905-670-8008</a>
+  </div>
+ </div>
+</section>
+
+</div>
