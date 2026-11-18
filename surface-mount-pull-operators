@@ -1,0 +1,999 @@
+
+<div id="omega-pull-page">
+
+<style>
+#omega-pull-page{
+ --op-red:#e3231b;
+ --op-gold:#c5a064;
+ --op-dark:#101216;
+ --op-dark2:#17191d;
+ --op-text:#292929;
+ --op-muted:#77736d;
+ --op-light:#f8f7f4;
+ --op-border:#e9e5de;
+ font-family:Georgia,"Times New Roman",serif;
+ color:var(--op-text);
+ background:#fff;
+ overflow:hidden;
+ width:100%;
+}
+#omega-pull-page *{box-sizing:border-box}
+#omega-pull-page img{max-width:100%;height:auto;display:block}
+#omega-pull-page a{text-decoration:none}
+#omega-pull-page .op-wrap{width:min(1120px,90%);margin:auto}
+#omega-pull-page .op-section{padding:78px 0}
+#omega-pull-page .op-light{background:var(--op-light)}
+#omega-pull-page .op-white{background:#fff}
+#omega-pull-page .op-dark{background:var(--op-dark);color:#fff}
+#omega-pull-page .op-eyebrow{
+ color:var(--op-gold);font-size:11px;font-weight:bold;
+ letter-spacing:2px;text-transform:uppercase;
+}
+#omega-pull-page .op-title{
+ font-size:35px;line-height:1.2;font-weight:normal;
+ margin:12px 0 17px;color:#202020;
+}
+#omega-pull-page .op-title em{
+ color:var(--op-gold);font-weight:normal;
+}
+#omega-pull-page .op-dark .op-title{color:#fff}
+#omega-pull-page .op-copy{
+ color:#6d6963;font-size:14px;line-height:1.9;
+}
+#omega-pull-page .op-dark .op-copy{color:#c7c4be}
+#omega-pull-page .op-btn{
+ display:inline-flex;align-items:center;justify-content:center;
+ background:var(--op-red);color:#fff!important;
+ padding:13px 20px;border:1px solid var(--op-red);
+ font-size:11px;font-weight:bold;letter-spacing:.5px;
+ text-transform:uppercase;transition:.25s;
+}
+#omega-pull-page .op-btn:hover{
+ background:#b91d17;border-color:#b91d17;
+}
+#omega-pull-page .op-btn-outline{
+ background:transparent;border-color:rgba(255,255,255,.45);
+ color:#fff!important;
+}
+#omega-pull-page .op-btn-outline:hover{
+ background:var(--op-red);border-color:var(--op-red);
+}
+#omega-pull-page .op-rule{
+ height:1px;background:var(--op-border);margin:22px 0 28px;
+ position:relative;
+}
+#omega-pull-page .op-rule:before{
+ content:"";position:absolute;left:0;top:-1px;
+ width:55px;height:2px;background:var(--op-gold);
+}
+#omega-pull-page .op-center{text-align:center}
+#omega-pull-page .op-center .op-copy{
+ max-width:760px;margin-left:auto;margin-right:auto;
+}
+
+/* HERO */
+#omega-pull-page .op-hero{
+ background:
+ linear-gradient(90deg,rgba(8,10,13,.97),rgba(8,10,13,.91) 55%,rgba(8,10,13,.75)),
+ url("https://omegaautomatics.com/images/surface-mount-rh-pull-large.png") center/cover no-repeat;
+ padding:76px 0;color:#fff;
+}
+#omega-pull-page .op-hero-grid{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:55px;align-items:center;
+}
+#omega-pull-page .op-hero h1{
+ color:#fff;font-size:52px;line-height:1.08;
+ font-weight:normal;margin:13px 0 22px;
+}
+#omega-pull-page .op-hero h1 em{
+ color:var(--op-gold);font-weight:normal;
+}
+#omega-pull-page .op-hero-text{
+ color:#d1cec8;font-size:14px;line-height:1.9;
+ max-width:530px;margin-bottom:25px;
+}
+#omega-pull-page .op-meta{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:14px;margin:28px 0;
+}
+#omega-pull-page .op-meta-item{
+ border-top:1px solid var(--op-gold);padding-top:12px;
+}
+#omega-pull-page .op-meta-item strong{
+ display:block;color:var(--op-gold);
+ font-size:11px;margin-bottom:7px;
+}
+#omega-pull-page .op-meta-item span{
+ display:block;color:#d0cdc7;font-size:11px;line-height:1.6;
+}
+#omega-pull-page .op-hero-buttons{
+ display:flex;gap:11px;flex-wrap:wrap;
+}
+#omega-pull-page .op-hero-gallery{display:grid;gap:15px}
+#omega-pull-page .op-hero-image{
+ background:#fff;padding:13px 16px 11px;text-align:center;
+}
+#omega-pull-page .op-hero-image img{
+ width:100%;height:145px;object-fit:contain;
+}
+#omega-pull-page .op-hero-image strong{
+ display:block;color:#292929;font-size:11px;
+ border-top:1px solid #eee;padding-top:10px;margin-top:9px;
+}
+
+/* INTRO */
+#omega-pull-page .op-two-col{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:48px;align-items:center;
+}
+#omega-pull-page .op-image-panel{
+ background:#f4f2ee;padding:24px;
+}
+#omega-pull-page .op-image-panel img{
+ width:100%;height:300px;object-fit:contain;
+}
+#omega-pull-page .op-list{
+ list-style:none;padding:0;margin:22px 0 0;
+}
+#omega-pull-page .op-list li{
+ position:relative;padding:12px 0 12px 24px;
+ border-bottom:1px solid var(--op-border);
+ color:#5d5954;font-size:13px;line-height:1.7;
+}
+#omega-pull-page .op-list li:before{
+ content:"";position:absolute;left:2px;top:19px;
+ height:7px;width:7px;background:var(--op-gold);
+}
+
+/* PRODUCT MODELS */
+#omega-pull-page .op-model-grid{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:20px;margin-top:35px;
+}
+#omega-pull-page .op-model{
+ background:#fff;border:1px solid var(--op-border);
+ border-top:3px solid var(--op-gold);
+ padding:20px;text-align:center;
+ transition:.25s;
+}
+#omega-pull-page .op-model:hover{
+ transform:translateY(-4px);
+ box-shadow:0 10px 24px rgba(0,0,0,.07);
+}
+#omega-pull-page .op-model img{
+ width:100%;height:125px;object-fit:contain;margin-bottom:15px;
+}
+#omega-pull-page .op-model h3{
+ font-size:17px;color:#222;margin:0 0 7px;
+}
+#omega-pull-page .op-model .op-model-code{
+ color:var(--op-gold);font-size:11px;
+ font-weight:bold;letter-spacing:1px;
+}
+#omega-pull-page .op-model p{
+ color:#777;font-size:12px;line-height:1.7;
+ min-height:42px;margin:12px 0 16px;
+}
+#omega-pull-page .op-model .op-btn{padding:11px 16px}
+
+/* MODEL REFERENCE */
+#omega-pull-page .op-table{
+ width:100%;border-collapse:collapse;
+ margin-top:30px;font-size:13px;
+}
+#omega-pull-page .op-table th{
+ background:#17191d;color:#fff;
+ text-align:left;padding:15px;
+ font-weight:normal;
+}
+#omega-pull-page .op-table td{
+ padding:14px 15px;border-bottom:1px solid var(--op-border);
+ color:#68635d;line-height:1.6;
+}
+#omega-pull-page .op-table tr:nth-child(even) td{background:#f8f7f4}
+#omega-pull-page .op-table td:first-child{
+ color:#252525;font-weight:bold;width:18%;
+}
+
+/* PULL SIDE SECTION */
+#omega-pull-page .op-pull-explainer{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:48px;align-items:center;
+}
+#omega-pull-page .op-pull-explainer .op-image-panel img{
+ height:270px;
+}
+
+/* TECHNICAL */
+#omega-pull-page .op-tech-grid{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:40px;margin-top:35px;align-items:start;
+}
+#omega-pull-page .op-subtitle{
+ font-size:21px;font-weight:normal;color:#222;margin:0;
+}
+#omega-pull-page .op-tech-table{
+ width:100%;border-collapse:collapse;font-size:12px;
+}
+#omega-pull-page .op-tech-table td{
+ padding:13px 11px;border-bottom:1px solid #eae6df;
+ line-height:1.55;
+}
+#omega-pull-page .op-tech-table tr:nth-child(odd) td{
+ background:#f8f7f4;
+}
+#omega-pull-page .op-tech-table td:first-child{
+ width:43%;color:#282828;font-weight:bold;
+}
+#omega-pull-page .op-tech-table td:last-child{color:#716d67}
+#omega-pull-page .op-note{
+ color:#858078;font-size:11px;line-height:1.8;margin-top:20px;
+}
+
+/* FEATURES */
+#omega-pull-page .op-feature-grid{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ margin-top:35px;border-top:1px solid rgba(197,160,100,.45);
+}
+#omega-pull-page .op-feature{
+ padding:23px 21px;
+ border-right:1px solid rgba(255,255,255,.12);
+ border-bottom:1px solid rgba(255,255,255,.12);
+}
+#omega-pull-page .op-feature:nth-child(3n){border-right:0}
+#omega-pull-page .op-feature small{
+ color:var(--op-gold);font-size:10px;letter-spacing:1px;
+}
+#omega-pull-page .op-feature h3{
+ color:#fff;font-size:16px;font-weight:normal;margin:11px 0 8px;
+}
+#omega-pull-page .op-feature p{
+ color:#c1beb8;font-size:12px;line-height:1.8;margin:0;
+}
+
+/* FINISH */
+#omega-pull-page .op-finish-grid{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:22px;margin-top:32px;
+}
+#omega-pull-page .op-finish{
+ padding:26px;background:#f7f6f3;
+ border-left:3px solid var(--op-gold);
+}
+#omega-pull-page .op-finish small{
+ color:var(--op-gold);font-size:10px;letter-spacing:1px;
+}
+#omega-pull-page .op-finish h3{
+ color:#222;font-size:20px;margin:10px 0;
+}
+#omega-pull-page .op-finish p{
+ color:#6d6963;font-size:13px;line-height:1.8;margin:0;
+}
+
+/* APPLICATIONS */
+#omega-pull-page .op-app-grid{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:12px;margin-top:30px;
+}
+#omega-pull-page .op-app{
+ background:#f7f6f3;padding:17px 18px;
+ border-left:2px solid var(--op-gold);
+ color:#45413c;font-size:13px;line-height:1.6;
+}
+
+/* DRAWINGS */
+#omega-pull-page .op-drawing-grid{
+ display:grid;grid-template-columns:repeat(3,1fr);
+ gap:17px;margin-top:35px;
+}
+#omega-pull-page .op-drawing{
+ padding:22px;background:#fff;
+ border:1px solid var(--op-border);
+ box-shadow:0 5px 18px rgba(0,0,0,.035);
+}
+#omega-pull-page .op-drawing-mark{
+ color:var(--op-gold);font-size:23px;margin-bottom:12px;
+}
+#omega-pull-page .op-drawing h3{
+ color:#292929;font-size:15px;margin:0 0 8px;
+}
+#omega-pull-page .op-drawing p{
+ color:#777;font-size:11px;margin:0 0 15px;
+}
+#omega-pull-page .op-drawing a{
+ display:block;background:#f5f3ef;border:1px solid #e9e5de;
+ padding:11px;text-align:center;color:#3c3935;
+ font-size:11px;
+}
+#omega-pull-page .op-drawing a:hover{
+ background:var(--op-red);color:#fff;border-color:var(--op-red);
+}
+
+/* FAQ — SAME STRUCTURE AS PUSH OPERATORS PAGE */
+#omega-pull-page .op-faq-layout{
+ display:grid;
+ grid-template-columns:.78fr 1.22fr;
+ gap:48px;
+ align-items:start;
+ margin-top:35px;
+}
+#omega-pull-page .op-faq-intro{
+ position:sticky;top:25px;
+}
+#omega-pull-page .op-faq-intro .op-title{font-size:32px}
+#omega-pull-page .op-faq-intro .op-copy{margin-bottom:22px}
+#omega-pull-page .op-faq-list{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:0 26px;
+ align-items:start;
+}
+#omega-pull-page .op-faq-item{
+ border-bottom:1px solid var(--op-border);
+ padding:0;
+ margin:0;
+}
+#omega-pull-page .op-faq-item details{padding:17px 0}
+#omega-pull-page .op-faq-item summary{
+ cursor:pointer;list-style:none;
+ display:flex;align-items:flex-start;
+ justify-content:space-between;gap:13px;
+ color:#292929;font-size:14px;line-height:1.55;
+ font-weight:normal;
+}
+#omega-pull-page .op-faq-item summary::-webkit-details-marker{display:none}
+#omega-pull-page .op-faq-item summary:after{
+ content:"+";
+ display:flex;align-items:center;justify-content:center;
+ flex:0 0 23px;width:23px;height:23px;
+ border:1px solid var(--op-gold);
+ color:var(--op-gold);font-size:17px;line-height:1;
+}
+#omega-pull-page .op-faq-item details[open] summary:after{
+ content:"−";background:var(--op-gold);color:#fff;
+}
+#omega-pull-page .op-faq-item p{
+ color:#716d67;font-size:12px;line-height:1.85;
+ margin:12px 0 2px;padding-right:24px;
+}
+
+/* CTA */
+#omega-pull-page .op-cta{
+ background:
+ linear-gradient(90deg,rgba(8,10,13,.96),rgba(8,10,13,.87)),
+ url("https://omegaautomatics.com/images/surface-mount-lh-pull.png") center/cover;
+ padding:68px 0;color:#fff;
+}
+#omega-pull-page .op-cta-inner{
+ display:flex;align-items:center;justify-content:space-between;
+ gap:35px;
+}
+#omega-pull-page .op-cta h2{
+ color:#fff;font-size:33px;line-height:1.25;
+ font-weight:normal;margin:12px 0;
+}
+#omega-pull-page .op-cta p{
+ color:#c9c6c0;font-size:13px;line-height:1.8;
+ max-width:670px;margin:0;
+}
+#omega-pull-page .op-cta-buttons{
+ display:flex;gap:10px;flex-wrap:wrap;flex-shrink:0;
+}
+
+/* RELATED LINKS */
+#omega-pull-page .op-related{
+ display:flex;flex-wrap:wrap;gap:13px 24px;margin-top:25px;
+}
+#omega-pull-page .op-related a{
+ color:#a27d45;font-size:12px;
+ border-bottom:1px solid #d9c8a9;padding-bottom:4px;
+}
+#omega-pull-page .op-related a:hover{color:var(--op-red)}
+
+/* RESPONSIVE */
+@media(max-width:850px){
+ #omega-pull-page .op-hero-grid,
+ #omega-pull-page .op-two-col,
+ #omega-pull-page .op-pull-explainer,
+ #omega-pull-page .op-tech-grid{gap:28px}
+ #omega-pull-page .op-hero h1{font-size:43px}
+ #omega-pull-page .op-model-grid{grid-template-columns:repeat(2,1fr)}
+ #omega-pull-page .op-feature-grid{grid-template-columns:repeat(2,1fr)}
+ #omega-pull-page .op-feature:nth-child(3n){border-right:1px solid rgba(255,255,255,.12)}
+ #omega-pull-page .op-feature:nth-child(2n){border-right:0}
+ #omega-pull-page .op-faq-layout{
+  grid-template-columns:1fr;gap:20px;
+ }
+ #omega-pull-page .op-faq-intro{position:static}
+ #omega-pull-page .op-faq-intro .op-title{max-width:650px}
+ #omega-pull-page .op-cta-inner{
+  align-items:flex-start;flex-direction:column;
+ }
+}
+@media(max-width:600px){
+ #omega-pull-page .op-wrap{width:90%}
+ #omega-pull-page .op-section{padding:55px 0}
+ #omega-pull-page .op-title{font-size:29px}
+ #omega-pull-page .op-hero{padding:58px 0}
+ #omega-pull-page .op-hero-grid,
+ #omega-pull-page .op-two-col,
+ #omega-pull-page .op-pull-explainer,
+ #omega-pull-page .op-tech-grid{grid-template-columns:1fr}
+ #omega-pull-page .op-hero h1{font-size:39px}
+ #omega-pull-page .op-meta{gap:9px}
+ #omega-pull-page .op-meta-item span{font-size:10px}
+ #omega-pull-page .op-hero-image img{height:125px}
+ #omega-pull-page .op-model-grid,
+ #omega-pull-page .op-finish-grid,
+ #omega-pull-page .op-app-grid,
+ #omega-pull-page .op-drawing-grid{grid-template-columns:1fr}
+ #omega-pull-page .op-feature-grid{grid-template-columns:1fr}
+ #omega-pull-page .op-feature,
+ #omega-pull-page .op-feature:nth-child(3n){border-right:0}
+ #omega-pull-page .op-faq-list{grid-template-columns:1fr}
+ #omega-pull-page .op-faq-layout{gap:12px}
+ #omega-pull-page .op-faq-intro .op-title{font-size:28px}
+ #omega-pull-page .op-table{font-size:11px}
+ #omega-pull-page .op-table th,
+ #omega-pull-page .op-table td{padding:11px 8px}
+ #omega-pull-page .op-tech-table{font-size:11px}
+ #omega-pull-page .op-cta h2{font-size:28px}
+ #omega-pull-page .op-cta-buttons{width:100%}
+ #omega-pull-page .op-cta-buttons .op-btn{width:100%}
+}
+</style>
+
+<!-- HERO -->
+<section class="op-hero">
+ <div class="op-wrap op-hero-grid">
+  <div>
+   <div class="op-eyebrow">Section One — Automatic Swing Door Systems</div>
+   <h1>Surface Mount <em>Pull</em> Operators</h1>
+   <p class="op-hero-text">
+    Omega's OA100-SM Surface Mount Pull Operators are designed for commercial, healthcare, condominium and institutional entrances. Available in left-hand, right-hand and dual-door configurations, the Pull Series combines a surface-mounted operator with a pull-side slide-track arrangement.
+   </p>
+
+   <div class="op-meta">
+    <div class="op-meta-item">
+     <strong>Pull Series</strong>
+     <span>PL-L · PL-R · PL-AA · PL-AM · PL-MA</span>
+    </div>
+    <div class="op-meta-item">
+     <strong>Anodized Clear Finish</strong>
+     <span>Standard Commercial</span>
+    </div>
+    <div class="op-meta-item">
+     <strong>Anodized Black Finish</strong>
+     <span>Luxury & Design</span>
+    </div>
+   </div>
+
+   <div class="op-hero-buttons">
+    <a class="op-btn" href="https://omegaautomatics.com/images/pdf/OA-100-Technical-Features-and-Functional-Descriptions.pdf" target="_blank" rel="noopener">Download Technical Features PDF</a>
+    <a class="op-btn op-btn-outline" href="https://omegaautomatics.com/OA100%20-%20SM%20-%20DOOR%20OPERATOR.html" target="_blank" rel="noopener">View Product Brochure</a>
+   </div>
+  </div>
+
+  <div class="op-hero-gallery">
+   <div class="op-hero-image">
+    <img src="https://omegaautomatics.com/images/surface-mount-lh-pull.png" alt="Omega surface mount left hand pull automatic door operator">
+    <strong>Surface Mount Left Hand Pull</strong>
+   </div>
+   <div class="op-hero-image">
+    <img src="https://omegaautomatics.com/images/surface-mount-rh-pull-large.png" alt="Omega surface mount right hand pull automatic door operator">
+    <strong>Surface Mount Right Hand Pull</strong>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- INTRO -->
+<section class="op-section op-white">
+ <div class="op-wrap op-two-col">
+  <div>
+   <div class="op-eyebrow">OA100-SM Pull Series</div>
+   <h2 class="op-title">Automatic Swing Door Operation on the <em>Pull Side</em></h2>
+   <p class="op-copy">
+    The Surface Mount Pull Operator is designed for automatic swing door installations where the operator is positioned on the pull side of the door. Its pull-arm arrangement connects the surface-mounted operator to the door through a slide-track assembly.
+   </p>
+   <p class="op-copy">
+    The OA100-SM Pull Series offers multiple configurations for single and paired doors. Left-hand and right-hand models support individual door arrangements, while the dual series includes active/active and active/manual combinations.
+   </p>
+   <ul class="op-list">
+    <li>Surface-mounted automatic swing door operator</li>
+    <li>Pull-side slide-track arm arrangement</li>
+    <li>Left-hand and right-hand single-door configurations</li>
+    <li>Dual-door active and manual combinations</li>
+    <li>Anodized clear and anodized black finish options</li>
+   </ul>
+  </div>
+  <div class="op-image-panel">
+   <img src="https://omegaautomatics.com/images/surface-mount-dual-pull.png" alt="Omega surface mount dual active pull operator">
+  </div>
+ </div>
+</section>
+
+<!-- MODELS -->
+<section class="op-section op-light">
+ <div class="op-wrap">
+  <div class="op-center">
+   <div class="op-eyebrow">Surface Mount — Pull Series</div>
+   <h2 class="op-title">Explore the OA100-SM <em>Pull Configurations</em></h2>
+   <p class="op-copy">
+    Select from five model designations covering left-hand, right-hand and dual pull operator arrangements. Each configuration has a corresponding technical drawing for project planning and installation reference.
+   </p>
+  </div>
+
+  <div class="op-model-grid">
+   <article class="op-model">
+    <img src="https://omegaautomatics.com/images/surface-mount-lh-pull.png" alt="PL-L surface mount left hand pull operator">
+    <h3>Left Hand Pull</h3>
+    <div class="op-model-code">PL-L</div>
+    <p>Single-door left-hand pull operator configuration.</p>
+    <a class="op-btn" href="https://omegaautomatics.com/images/pdf/PL-L2022.pdf" target="_blank" rel="noopener">Download PDF</a>
+   </article>
+
+   <article class="op-model">
+    <img src="https://omegaautomatics.com/images/surface-mount-rh-pull-large.png" alt="PL-R surface mount right hand pull operator">
+    <h3>Right Hand Pull</h3>
+    <div class="op-model-code">PL-R</div>
+    <p>Single-door right-hand pull operator configuration.</p>
+    <a class="op-btn" href="https://omegaautomatics.com/images/pdf/PL-R2022.pdf" target="_blank" rel="noopener">Download PDF</a>
+   </article>
+
+   <article class="op-model">
+    <img src="https://omegaautomatics.com/images/surface-mount-dual-pull.png" alt="PL-AA dual active pull operators">
+    <h3>Dual Pull — Active / Active</h3>
+    <div class="op-model-code">PL-AA</div>
+    <p>Dual-door active/active pull operator configuration.</p>
+    <a class="op-btn" href="https://omegaautomatics.com/images/pdf/PL-AA2022.pdf" target="_blank" rel="noopener">Download PDF</a>
+   </article>
+
+   <article class="op-model">
+    <img src="https://omegaautomatics.com/images/surface-mount-dual-pull.png" alt="PL-AM dual pull operator active manual configuration">
+    <h3>Dual Pull — Active / Manual</h3>
+    <div class="op-model-code">PL-AM</div>
+    <p>Dual-door active/manual pull operator configuration.</p>
+    <a class="op-btn" href="https://omegaautomatics.com/images/pdf/PL-AM2022.pdf" target="_blank" rel="noopener">Download PDF</a>
+   </article>
+
+   <article class="op-model">
+    <img src="https://omegaautomatics.com/images/surface-mount-dual-pull.png" alt="PL-MA dual pull operator manual active configuration">
+    <h3>Dual Pull — Manual / Active</h3>
+    <div class="op-model-code">PL-MA</div>
+    <p>Dual-door manual/active pull operator configuration.</p>
+    <a class="op-btn" href="https://omegaautomatics.com/images/pdf/PL-MA2022.pdf" target="_blank" rel="noopener">Download PDF</a>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- MODEL REFERENCE -->
+<section class="op-section op-white">
+ <div class="op-wrap">
+  <div class="op-eyebrow">Product Selection</div>
+  <h2 class="op-title">Pull Series <em>Model Reference</em></h2>
+  <p class="op-copy">
+   Compare the available model designations before selecting a configuration for your automatic swing door project.
+  </p>
+  <table class="op-table">
+   <thead>
+    <tr><th>Model</th><th>Configuration</th><th>Door Arrangement</th></tr>
+   </thead>
+   <tbody>
+    <tr><td>PL-L</td><td>Left Hand Pull</td><td>Single Door</td></tr>
+    <tr><td>PL-R</td><td>Right Hand Pull</td><td>Single Door</td></tr>
+    <tr><td>PL-AA</td><td>Active / Active</td><td>Dual Pull</td></tr>
+    <tr><td>PL-AM</td><td>Active / Manual</td><td>Dual Pull</td></tr>
+    <tr><td>PL-MA</td><td>Manual / Active</td><td>Dual Pull</td></tr>
+   </tbody>
+  </table>
+ </div>
+</section>
+
+<!-- PULL SIDE DESIGN -->
+<section class="op-section op-light">
+ <div class="op-wrap op-pull-explainer">
+  <div class="op-image-panel">
+   <img src="https://omegaautomatics.com/images/surface-mount-lh-pull.png" alt="Surface mount left hand pull operator slide track arm">
+  </div>
+  <div>
+   <div class="op-eyebrow">Pull-Side Installation Arrangement</div>
+   <h2 class="op-title">A Purpose-Built <em>Pull Arm Configuration</em></h2>
+   <p class="op-copy">
+    Pull-side automatic door installations use a different operator and arm arrangement from push-side installations. The OA100-SM Pull Series is designed around a slide-track arm configuration for the pull face of the swing door.
+   </p>
+   <p class="op-copy">
+    Correct model selection and installation planning should take into account door handing, the selected single or dual configuration, mounting dimensions and the relevant technical drawing.
+   </p>
+   <ul class="op-list">
+    <li>Pull-side operator arrangement</li>
+    <li>Model-specific left-hand and right-hand options</li>
+    <li>Dual-door model configurations</li>
+    <li>Individual technical drawings for installation reference</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<!-- TECHNICAL SPECS -->
+<section class="op-section op-white">
+ <div class="op-wrap">
+  <div class="op-eyebrow">OA100-SM Technical Information</div>
+  <h2 class="op-title">Technical <em>Specifications</em></h2>
+  <p class="op-copy">
+   Review the published technical specifications for the Omega Surface Mount Pull Operator. These details can assist contractors, architects and project teams during product evaluation and entrance planning.
+  </p>
+
+  <div class="op-tech-grid">
+   <div>
+    <h3 class="op-subtitle">Technical Specifications</h3>
+    <div class="op-rule"></div>
+    <table class="op-tech-table">
+     <tr><td>Power Supply</td><td>120VAC, 60Hz</td></tr>
+     <tr><td>Door Capacity</td><td>Up to 450 lbs of weight</td></tr>
+     <tr><td>Header Lengths</td><td>39" and 41" standard; custom on request</td></tr>
+     <tr><td>Control Board</td><td>Universal digital with visual display</td></tr>
+     <tr><td>DC Motor</td><td>1/3 hp 24VDC permanent magnet</td></tr>
+     <tr><td>On Board Power Supply</td><td>24 VDC 1.2 A</td></tr>
+     <tr><td>Position Switch</td><td>Magnet reader included</td></tr>
+     <tr><td>Electric Lock Input</td><td>Fail Safe / Fail Secure</td></tr>
+     <tr><td>Open/Closed Status Output</td><td>Dry contact monitoring included</td></tr>
+     <tr><td>SM-XP Option</td><td>Surface Mount — stack pressure compensation; selectable</td></tr>
+     <tr><td>Fire Relay</td><td>Included</td></tr>
+     <tr><td>Finish Options</td><td>Anodized Clear and Anodized Black</td></tr>
+     <tr><td>Temperature Range</td><td>-30°C to +50°C</td></tr>
+     <tr><td>Origin</td><td>Vaughan, Ontario, Canada</td></tr>
+     <tr><td>Warranty</td><td>1 year parts from date of invoice</td></tr>
+    </table>
+   </div>
+
+   <div>
+    <h3 class="op-subtitle">Dimensions & Operating Features</h3>
+    <div class="op-rule"></div>
+    <table class="op-tech-table">
+     <tr><td>Header Depth</td><td>5 inches</td></tr>
+     <tr><td>Header Height</td><td>4½ inches</td></tr>
+     <tr><td>Standard Width</td><td>39 inches for 36-inch door</td></tr>
+     <tr><td>Standard Sizes</td><td>39" and 41"</td></tr>
+     <tr><td>Door Capacity</td><td>Up to 450 lbs</td></tr>
+     <tr><td>Push & Go</td><td>Selectable</td></tr>
+     <tr><td>Obstacle Detection</td><td>Reversible on opening</td></tr>
+     <tr><td>XP Option</td><td>Selectable power close</td></tr>
+     <tr><td>Opening & Closing Speed</td><td>Adjustable</td></tr>
+     <tr><td>Closing Force</td><td>Selectable settings</td></tr>
+     <tr><td>Latch Assist</td><td>Selectable before opening and closing</td></tr>
+     <tr><td>Latching Area</td><td>Adjustable position and speed</td></tr>
+     <tr><td>Back Check</td><td>Adjustable speed and position</td></tr>
+     <tr><td>Presence Detector Inputs</td><td>Yes</td></tr>
+     <tr><td>Extendable Spindle</td><td>Options available</td></tr>
+     <tr><td>Installation</td><td>Interior / Exterior swing doors</td></tr>
+    </table>
+   </div>
+  </div>
+  <p class="op-note">
+   Specifications are based on Omega's published product information. Confirm the selected model, project conditions, installation dimensions and available options with Omega before final specification.
+  </p>
+  <a class="op-btn" href="https://omegaautomatics.com/images/pdf/OA-100-Technical-Features-and-Functional-Descriptions.pdf" target="_blank" rel="noopener">Download Technical Features PDF</a>
+ </div>
+</section>
+
+<!-- FEATURES -->
+<section class="op-section op-dark">
+ <div class="op-wrap">
+  <div class="op-eyebrow">OA100-SM Operator Functions</div>
+  <h2 class="op-title">Control & Operating <em>Features</em></h2>
+  <p class="op-copy">
+   The OA100-SM platform includes adjustable operating parameters, monitoring outputs and connection options for different automatic swing door applications.
+  </p>
+
+  <div class="op-feature-grid">
+   <article class="op-feature">
+    <small>01 — CONTROL</small>
+    <h3>Universal Digital Control Board</h3>
+    <p>Digital control board with visual display for operator setup and configuration.</p>
+   </article>
+   <article class="op-feature">
+    <small>02 — MOTOR</small>
+    <h3>24VDC Permanent Magnet Motor</h3>
+    <p>1/3 hp permanent magnet motor as specified for the OA100-SM operator.</p>
+   </article>
+   <article class="op-feature">
+    <small>03 — OPERATION</small>
+    <h3>Push & Go</h3>
+    <p>Selectable Push & Go operating function.</p>
+   </article>
+   <article class="op-feature">
+    <small>04 — DETECTION</small>
+    <h3>Obstacle Detection</h3>
+    <p>Reversible obstacle detection on opening.</p>
+   </article>
+   <article class="op-feature">
+    <small>05 — SPEED</small>
+    <h3>Adjustable Operating Speed</h3>
+    <p>Opening and closing speeds can be adjusted.</p>
+   </article>
+   <article class="op-feature">
+    <small>06 — CLOSING</small>
+    <h3>Adjustable Closing Force</h3>
+    <p>Selectable closing force settings.</p>
+   </article>
+   <article class="op-feature">
+    <small>07 — LATCHING</small>
+    <h3>Latch Assist</h3>
+    <p>Selectable before opening and closing, with time and force adjustability to help prevent electric strike binding.</p>
+   </article>
+   <article class="op-feature">
+    <small>08 — POSITION</small>
+    <h3>Adjustable Latching Area</h3>
+    <p>Set the latching position and closing speed within the latch zone.</p>
+   </article>
+   <article class="op-feature">
+    <small>09 — CONTROL</small>
+    <h3>Adjustable Back Check</h3>
+    <p>Set the speed and position of the back check for door control.</p>
+   </article>
+   <article class="op-feature">
+    <small>10 — MONITORING</small>
+    <h3>Open / Closed Status</h3>
+    <p>Dry contact output for remote door status monitoring.</p>
+   </article>
+   <article class="op-feature">
+    <small>11 — ACCESS</small>
+    <h3>Presence Detector Inputs</h3>
+    <p>Inputs are provided for presence detector connections.</p>
+   </article>
+   <article class="op-feature">
+    <small>12 — OPTIONS</small>
+    <h3>SM-XP Option</h3>
+    <p>Selectable surface mount stack pressure compensation option.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<!-- FINISH OPTIONS -->
+<section class="op-section op-white">
+ <div class="op-wrap">
+  <div class="op-eyebrow">Architectural Finish Options</div>
+  <h2 class="op-title">Anodized Finish <em>Choices</em></h2>
+  <p class="op-copy">
+   The Surface Mount Pull Series is listed with two anodized finish options to suit different commercial and architectural design requirements.
+  </p>
+  <div class="op-finish-grid">
+   <div class="op-finish">
+    <small>FINISH OPTION 01</small>
+    <h3>Anodized Clear Finish</h3>
+    <p>Listed as the standard commercial finish option for the OA100-SM Pull Series.</p>
+   </div>
+   <div class="op-finish">
+    <small>FINISH OPTION 02</small>
+    <h3>Anodized Black Finish</h3>
+    <p>A darker architectural finish option for projects where the operator appearance needs to complement the entrance design.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="op-section op-light">
+ <div class="op-wrap">
+  <div class="op-eyebrow">Automatic Entrance Applications</div>
+  <h2 class="op-title">Designed for Commercial & <em>Institutional Buildings</em></h2>
+  <p class="op-copy">
+   Omega identifies commercial, healthcare, condominium and institutional installations among the environments served by its automatic entrance solutions. The correct pull operator model should be selected according to the door arrangement and project requirements.
+  </p>
+  <div class="op-app-grid">
+   <div class="op-app">Commercial building entrances</div>
+   <div class="op-app">Healthcare facilities</div>
+   <div class="op-app">Condominium common entrances</div>
+   <div class="op-app">Institutional buildings</div>
+   <div class="op-app">Office and commercial properties</div>
+   <div class="op-app">Interior and exterior swing doors</div>
+  </div>
+ </div>
+</section>
+
+<!-- TECHNICAL DRAWINGS -->
+<section class="op-section op-white">
+ <div class="op-wrap">
+  <div class="op-center">
+   <div class="op-eyebrow">Product Documentation</div>
+   <h2 class="op-title">Pull Operator <em>Technical Drawings</em></h2>
+   <p class="op-copy">
+    Download the model-specific PDF drawings for the OA100-SM Surface Mount Pull Series. Review the applicable drawing when planning door handing, mounting positions and installation details.
+   </p>
+  </div>
+
+  <div class="op-drawing-grid">
+   <div class="op-drawing">
+    <div class="op-drawing-mark">⌁</div>
+    <h3>Pull Arm Operator — Left Hand</h3>
+    <p>PL-L2022.pdf</p>
+    <a href="https://omegaautomatics.com/images/pdf/PL-L2022.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+   </div>
+   <div class="op-drawing">
+    <div class="op-drawing-mark">⌁</div>
+    <h3>Pull Arm Operator — Right Hand</h3>
+    <p>PL-R2022.pdf</p>
+    <a href="https://omegaautomatics.com/images/pdf/PL-R2022.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+   </div>
+   <div class="op-drawing">
+    <div class="op-drawing-mark">⌁</div>
+    <h3>Dual Pull Operators — Active / Active</h3>
+    <p>PL-AA2022.pdf</p>
+    <a href="https://omegaautomatics.com/images/pdf/PL-AA2022.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+   </div>
+   <div class="op-drawing">
+    <div class="op-drawing-mark">⌁</div>
+    <h3>Dual Pull Operators — Active / Manual</h3>
+    <p>PL-AM2022.pdf</p>
+    <a href="https://omegaautomatics.com/images/pdf/PL-AM2022.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+   </div>
+   <div class="op-drawing">
+    <div class="op-drawing-mark">⌁</div>
+    <h3>Dual Pull Operators — Manual / Active</h3>
+    <p>PL-MA2022.pdf</p>
+    <a href="https://omegaautomatics.com/images/pdf/PL-MA2022.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+   </div>
+   <div class="op-drawing">
+    <div class="op-drawing-mark">PDF</div>
+    <h3>OA100 Technical Features</h3>
+    <p>Technical Features & Functional Descriptions</p>
+    <a href="https://omegaautomatics.com/images/pdf/OA-100-Technical-Features-and-Functional-Descriptions.pdf" target="_blank" rel="noopener">Download PDF ↓</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- RELATED PRODUCTS -->
+<section class="op-section op-light">
+ <div class="op-wrap">
+  <div class="op-eyebrow">Explore Omega Product Range</div>
+  <h2 class="op-title">Explore Related <em>Automatic Door Systems</em></h2>
+  <p class="op-copy">
+   Compare the Surface Mount Pull Series with other Omega automatic entrance products and configurations.
+  </p>
+  <div class="op-related">
+   <a href="https://omegaautomatics.com/surface-mount-push-operators">Surface Mount Push Operators →</a>
+   <a href="https://omegaautomatics.com/surface-mount-pull-operators">Surface Mount Pull Operators →</a>
+   <a href="https://omegaautomatics.com/bottom-load-centre-spindle-concealed-spindle-operators">Concealed Spindle Operators →</a>
+   <a href="https://omegaautomatics.com/bottom-load-center-hung-operators">Bottom Load Center Hung Operators →</a>
+   <a href="https://omegaautomatics.com/full-breakout-sliding-systems">Full Breakout Sliding Systems →</a>
+   <a href="https://omegaautomatics.com/fixed-sidelight-sliding-systems">Fixed Sidelight Sliding Systems →</a>
+   <a href="https://omegaautomatics.com/accessories-oem-parts">Accessories & OEM Parts →</a>
+   <a href="https://omegaautomatics.com/universal-washroom-kits">Universal Washroom Kits →</a>
+  </div>
+ </div>
+</section>
+
+<!-- FAQ — SAME PUSH PAGE STRUCTURE -->
+<section class="op-section op-white">
+ <div class="op-wrap">
+  <div class="op-eyebrow">Frequently Asked Questions</div>
+
+  <div class="op-faq-layout">
+
+   <!-- LEFT INTRO COLUMN -->
+   <div class="op-faq-intro">
+    <h2 class="op-title">Surface Mount Pull Operators <em>FAQs</em></h2>
+    <p class="op-copy">
+     Learn more about the OA100-SM Pull Series, available model configurations, technical specifications, installation arrangements and product documentation.
+    </p>
+    <p class="op-copy">
+     Need help identifying the right pull-side operator for your project? Contact Omega to discuss your door configuration and requirements.
+    </p>
+    <a class="op-btn" href="https://omegaautomatics.com/contact">Contact Omega</a>
+   </div>
+
+   <!-- RIGHT FAQ GRID: TWO COLUMNS -->
+   <div class="op-faq-list">
+
+    <div class="op-faq-item">
+     <details>
+      <summary>What is a surface mount pull door operator?</summary>
+      <p>A surface mount pull door operator is an automatic swing door operator installed on the pull side of a door. The Omega OA100-SM Pull Series uses a pull-side slide-track arm arrangement for automatic door operation.</p>
+     </details>
+    </div>
+
+    <div class="op-faq-item">
+     <details>
+      <summary>Which models are available in the Omega Pull Series?</summary>
+      <p>The OA100-SM Pull Series includes five model designations: PL-L, PL-R, PL-AA, PL-AM and PL-MA. These cover left-hand, right-hand and dual-door configurations.</p>
+     </details>
+    </div>
+
+    <div class="op-faq-item">
+     <details>
+      <summary>What is the difference between PL-L and PL-R?</summary>
+      <p>PL-L is the left-hand pull operator configuration, while PL-R is the right-hand pull operator configuration. Refer to the respective technical drawings to confirm the correct model for your door arrangement.</p>
+     </details>
+    </div>
+
+    <div class="op-faq-item">
+     <details>
+      <summary>Are dual-door pull operator configurations available?</summary>
+      <p>Yes. The Pull Series includes PL-AA for active/active, PL-AM for active/manual and PL-MA for manual/active dual-door arrangements.</p>
+     </details>
+    </div>
+
+    <div class="op-faq-item">
+     <details>
+      <summary>What type of arm does the pull operator use?</summary>
+      <p>The Surface Mount Pull Series uses a pull-side slide-track arm arrangement. The relevant model drawing should be reviewed for the specific mounting and installation details.</p>
+     </details>
+    </div>
+
+    <div class="op-faq-item">
+     <details>
+      <summary>What is the maximum door weight capacity?</summary>
+      <p>The published OA100-SM specification lists a door capacity of up to 450 lbs of weight. Confirm suitability for the actual door and installation conditions with Omega.</p>
+     </details>
+    </div>
+
+    <div class="op-faq-item">
+     <details>
+      <summary>What power supply is required for the OA100-SM?</summary>
+      <p>The published power supply specification is 120VAC, 60Hz. The operator also lists an on-board power supply of 24 VDC, 1.2 A.</p>
+     </details>
+    </div>
+
+    <div class="op-faq-item">
+     <details>
+      <summary>What finish options are available?</summary>
+      <p>The listed finish options are Anodized Clear Finish and Anodized Black Finish. Contact Omega to confirm availability for the selected model and project.</p>
+     </details>
+    </div>
+
+    <div class="op-faq-item">
+     <details>
+      <summary>Can the operator connect to an electric lock?</summary>
+      <p>Yes. The published specifications include an electric lock input with Fail Safe and Fail Secure options. Confirm lock compatibility and wiring requirements for your installation.</p>
+     </details>
+    </div>
+
+    <div class="op-faq-item">
+     <details>
+      <summary>Does the operator include adjustable opening and closing speeds?</summary>
+      <p>The published key features list adjustable opening and closing speeds, along with selectable closing force settings.</p>
+     </details>
+    </div>
+
+    <div class="op-faq-item">
+     <details>
+      <summary>Where can I download the Pull Series technical drawings?</summary>
+      <p>Individual PDF drawings are available for PL-L, PL-R, PL-AA, PL-AM and PL-MA in the Technical Drawings section of this page.</p>
+     </details>
+    </div>
+
+    <div class="op-faq-item">
+     <details>
+      <summary>How can I request information or a quote?</summary>
+      <p>You can contact Omega through the <a href="https://omegaautomatics.com/contact" style="color:#b51e18;text-decoration:underline">Contact page</a> or call 905-670-8008 to discuss your automatic door operator requirements.</p>
+     </details>
+    </div>
+
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="op-cta">
+ <div class="op-wrap op-cta-inner">
+  <div>
+   <div class="op-eyebrow">Talk to Omega Automatics</div>
+   <h2>Looking for the Right Surface Mount Pull Operator?</h2>
+   <p>
+    Discuss your single-door or dual-door configuration, review available models and get product information for your commercial entrance project. Omega can help you identify the relevant product resources for your requirements.
+   </p>
+  </div>
+  <div class="op-cta-buttons">
+   <a class="op-btn" href="https://omegaautomatics.com/contact">Request a Quote</a>
+   <a class="op-btn op-btn-outline" href="tel:9056708008">Call 905-670-8008</a>
+  </div>
+ </div>
+</section>
+
+</div>
